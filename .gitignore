@@ -1,0 +1,27 @@
+# Secrets. The API key must never enter history.
+.env
+.env.*
+!.env.example
+
+# Assignment data. The brief forbids committing sample documents or answers.
+sample/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Local runtime and OS files
+data/
+*.log
+.DS_Store
+.idea/
+.vscode/
+
+# Submission archive
+*.zip
