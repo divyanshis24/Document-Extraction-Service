@@ -1,0 +1,6 @@
+# Allowlist: only what the image needs, so secrets and sample data can't leak in.
+*
+!requirements.txt
+!app/
+**/__pycache__
+**/*.pyc

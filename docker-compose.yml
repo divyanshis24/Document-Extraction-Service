@@ -1,0 +1,78 @@
+x-app-env: &app-env
+  # Passed through from the shell or .env, with no built-in default.
+  LLM_BASE_URL: ${LLM_BASE_URL:-}
+  LLM_API_KEY: ${LLM_API_KEY:-}
+  DATABASE_URL: postgresql://extraction:${POSTGRES_PASSWORD:-extraction}@db:5432/extraction
+  LOG_LEVEL: ${LOG_LEVEL:-INFO}
+
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: extraction
+      POSTGRES_DB: extraction
+      # Default is fine because the port is never published outside the compose
+      # network. Override through the environment or .env for real deployments.
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-extraction}
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    healthcheck:
+      # -h 127.0.0.1 matters. During first-run init Postgres runs a temporary
+      # server on the unix socket only, and a socket check would pass too early.
+      test: ["CMD-SHELL", "pg_isready -h 127.0.0.1 -U extraction -d extraction"]
+      interval: 2s
+      timeout: 2s
+      retries: 20
+    restart: unless-stopped
+
+  api:
+    build:
+      context: .
+      args:
+        GIT_SHA: ${GIT_SHA:-dev}
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      <<: *app-env
+      MAX_ACTIVE_JOBS: ${MAX_ACTIVE_JOBS:-10000}
+    extra_hosts:
+      # Lets a gateway running on the host be reached on Linux as well as Mac.
+      - "host.docker.internal:host-gateway"
+    ports:
+      - "8080:8080"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request as u; u.urlopen('http://127.0.0.1:8080/health', timeout=4)"]
+      interval: 5s
+      timeout: 5s
+      retries: 6
+      start_period: 10s
+    stop_grace_period: 25s
+    restart: unless-stopped
+
+  worker:
+    build:
+      context: .
+      args:
+        GIT_SHA: ${GIT_SHA:-dev}
+    command: ["python", "-m", "app.worker"]
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      <<: *app-env
+      WORKER_CONCURRENCY: ${WORKER_CONCURRENCY:-5}
+      JOB_LEASE_SECONDS: ${JOB_LEASE_SECONDS:-60}
+      STUB_EXTRACTOR_DELAY_SECONDS: ${STUB_EXTRACTOR_DELAY_SECONDS:-0}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    deploy:
+      # 2 copies of 5 slots each covers the harness's 10 documents in flight.
+      # Scale up with `docker compose up --scale worker=N`.
+      replicas: 2
+    # Long enough to release in-flight jobs to the queue on shutdown.
+    stop_grace_period: 15s
+    restart: unless-stopped
+
+volumes:
+  db_data:
