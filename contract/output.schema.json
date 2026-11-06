@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Extraction result",
+  "description": "The result object a submission returns for one document, under `result` in GET /jobs/{id} once the job is SUCCESS or PARTIAL.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["entries", "metadata"],
+  "properties": {
+    "entries": {
+      "type": "array",
+      "minItems": 1,
+      "description": "One object per row of the document. A document with no table (a lease, a single-property summary) has exactly one entry. A document with a table (a rent roll, a box score) has one entry per row. Every entry contains EVERY field in the schema, including document-level fields, which repeat the same value in each entry.",
+      "items": {
+        "type": "object",
+        "description": "Keys are the field keys from the schema. Every schema field must be present, with value null when not found.",
+        "additionalProperties": { "$ref": "#/$defs/fieldResult" }
+      }
+    },
+    "metadata": { "$ref": "#/$defs/metadata" }
+  },
+  "$defs": {
+    "scalar": {
+      "description": "Numbers as JSON numbers, never strings, no currency symbols or thousands separators. Dates as YYYY-MM-DD strings. Percentages exactly as the document expresses them (a '% Leased' column showing 5.26 is 5.26, not 0.0526). null when the value is genuinely not in the document.",
+      "oneOf": [
+        { "type": "string" },
+        { "type": "number" },
+        { "type": "boolean" },
+        { "type": "null" }
+      ]
+    },
+    "fieldResult": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["value", "citation", "confidence"],
+      "properties": {
+        "value": {
+          "description": "The extracted value. A scalar for almost every field. A list of scalars only when the description asks for a list within one row (e.g. 'list of amenities'). Never guess: a wrong value costs more than a null.",
+          "oneOf": [
+            { "$ref": "#/$defs/scalar" },
+            { "type": "array", "items": { "$ref": "#/$defs/scalar" } }
+          ]
+        },
+        "citation": {
+          "description": "Where the value came from, as a short verbatim snippet prefixed with its location: \"[Page 3] Base Rent: $4,250.00 per month\" for PDFs, \"[Sheet1!F4] 4250\" for spreadsheets. Empty string when value is null.",
+          "type": "string"
+        },
+        "confidence": {
+          "description": "Your estimate in [0,1] that the value is correct.",
+          "type": "number", "minimum": 0, "maximum": 1
+        },
+        "page_numbers": {
+          "description": "Optional bonus for PDFs: 1-based page numbers the value was read from.",
+          "type": "array", "items": { "type": "integer", "minimum": 1 }
+        },
+        "source_locations": {
+          "description": "Optional bonus for XLSX/CSV: cell references the value was read from, e.g. \"Sheet1!F4\".",
+          "type": "array", "items": { "type": "string" }
+        }
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "required": ["model_calls", "tokens_in", "tokens_out", "cost_usd", "latency_ms"],
+      "additionalProperties": true,
+      "properties": {
+        "model_calls": { "type": "integer", "minimum": 0, "description": "Total LLM calls for this document, including retries and verification passes." },
+        "tokens_in": { "type": "integer", "minimum": 0 },
+        "tokens_out": { "type": "integer", "minimum": 0 },
+        "cost_usd": { "type": "number", "minimum": 0, "description": "Your computed cost from the provider's usage fields. We measure cost independently; this is for your tracking." },
+        "latency_ms": { "type": "integer", "minimum": 0, "description": "Wall-clock time from job accepted to result ready." },
+        "models": {
+          "type": "object",
+          "description": "Optional per-model breakdown keyed by model id.",
+          "additionalProperties": {
+            "type": "object",
+            "properties": {
+              "calls": { "type": "integer" }, "tokens_in": { "type": "integer" },
+              "tokens_out": { "type": "integer" }, "cost_usd": { "type": "number" }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,152 @@
+openapi: 3.1.0
+info:
+  title: Document Extraction Service (take-home contract)
+  version: "1.0"
+  description: |
+    The HTTP interface every submission must expose. Our evaluation harness drives
+    your service through exactly these three endpoints, so the paths, methods,
+    field names and status values below are fixed. Everything behind them is yours.
+
+    Runtime contract:
+      - `docker compose up` from the repo root starts the service.
+      - The service listens on port 8080 inside the container, published as 8080.
+      - GET /health returns 200 within 60 seconds of `docker compose up`.
+      - All LLM traffic goes through the OpenAI-compatible base URL in `LLM_BASE_URL`
+        using the key in `LLM_API_KEY`. No other provider endpoints, no hardcoded keys.
+      - The harness polls GET /jobs/{job_id} every 2 seconds and gives each job
+        up to 1800 seconds (30 minutes) to reach a terminal status, counted from submission.
+
+servers:
+  - url: http://localhost:8080
+
+paths:
+  /health:
+    get:
+      summary: Liveness check
+      operationId: health
+      responses:
+        "200":
+          description: Service is up and able to accept jobs.
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [status]
+                properties:
+                  status: { type: string, enum: [ok] }
+                  version: { type: string, description: "Optional. Your build or git SHA." }
+
+  /jobs:
+    post:
+      summary: Submit a document for extraction
+      operationId: createJob
+      description: |
+        Accepts one document and one schema, returns immediately with a job id.
+        Must not block on extraction. Duplicate submissions of the same
+        document + schema may return the existing job (idempotency is encouraged,
+        not required).
+      parameters:
+        - in: header
+          name: X-Organization-Id
+          required: false
+          schema: { type: string }
+          description: |
+            Optional tenant identifier. If you implement tenant isolation, a job
+            created under one organization id must not be readable under another
+            (GET returns 404, not 403).
+      requestBody:
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              required: [file, schema]
+              properties:
+                file:
+                  type: string
+                  format: binary
+                  description: PDF, DOCX, XLSX or CSV. Up to 50 MB.
+                schema:
+                  type: string
+                  description: The schema JSON as a string (see schema.example.json).
+                webhook_url:
+                  type: string
+                  format: uri
+                  description: Optional. If given, POST the final result object to this URL when the job reaches a terminal status.
+      responses:
+        "202":
+          description: Job accepted.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/JobStatus"
+        "400":
+          description: Malformed request (missing file or schema, schema not valid JSON, unsupported file type).
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/Error" }
+        "413":
+          description: File too large.
+        "429":
+          description: Too many concurrent jobs; the harness will back off and retry.
+          headers:
+            Retry-After:
+              schema: { type: integer }
+
+  /jobs/{job_id}:
+    get:
+      summary: Get job status and result
+      operationId: getJob
+      parameters:
+        - in: path
+          name: job_id
+          required: true
+          schema: { type: string }
+        - in: header
+          name: X-Organization-Id
+          required: false
+          schema: { type: string }
+      responses:
+        "200":
+          description: Current status. `result` is present only when status is SUCCESS or PARTIAL.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/JobStatus"
+        "404":
+          description: Unknown job id (or a job belonging to a different organization).
+
+components:
+  schemas:
+    JobStatus:
+      type: object
+      required: [job_id, status, created_at, updated_at]
+      properties:
+        job_id: { type: string }
+        status:
+          type: string
+          enum: [PENDING, RUNNING, SUCCESS, PARTIAL, FAILED]
+          description: |
+            PENDING: accepted, not started. RUNNING: in progress. SUCCESS / PARTIAL / FAILED are terminal
+            and must never change once set.
+        stage:
+          type: string
+          nullable: true
+          description: Optional free-text progress while RUNNING, e.g. PARSING, EXTRACTING, VERIFYING. Advisory only.
+        created_at: { type: string, format: date-time }
+        updated_at: { type: string, format: date-time }
+        result:
+          description: |
+            The extraction result object ({entries: [...], metadata: {...}}). Must validate
+            against output.schema.json. Present only when status is SUCCESS or PARTIAL.
+          nullable: true
+          type: object
+        error:
+          nullable: true
+          $ref: "#/components/schemas/Error"
+    Error:
+      type: object
+      required: [code, message]
+      properties:
+        code: { type: string }
+        message: { type: string }

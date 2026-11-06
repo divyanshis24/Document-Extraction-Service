@@ -1,0 +1,34 @@
+{
+  "entries": [
+    {
+      "property_name": { "value": "Cedar Ridge Apartments", "citation": "[Page 1] Cedar Ridge Apartments (3021)", "confidence": 1.0, "page_numbers": [1] },
+      "report_date": { "value": "2026-09-27", "citation": "[Page 1] Date = 09/21/2026-09/27/2026", "confidence": 0.95, "page_numbers": [1] },
+      "code": { "value": "CR - A1", "citation": "[Page 1] CR - A1", "confidence": 1.0, "page_numbers": [1] },
+      "unit_type": { "value": "1x1", "citation": "[Page 1] A1 - 1x1 - Cedar Ridge", "confidence": 0.9, "page_numbers": [1] },
+      "units": { "value": 24, "citation": "[Page 1] Units 24", "confidence": 0.98, "page_numbers": [1] },
+      "avg_rent": { "value": 1425, "citation": "[Page 1] Avg. Rent 1,425", "confidence": 0.98, "page_numbers": [1] },
+      "vacant": { "value": 2, "citation": "[Page 1] Vacant 2", "confidence": 0.95, "page_numbers": [1] },
+      "percent_leased": { "value": 91.67, "citation": "[Page 1] % Leased 91.67", "confidence": 0.9, "page_numbers": [1] }
+    },
+    {
+      "property_name": { "value": "Cedar Ridge Apartments", "citation": "[Page 1] Cedar Ridge Apartments (3021)", "confidence": 1.0, "page_numbers": [1] },
+      "report_date": { "value": "2026-09-27", "citation": "[Page 1] Date = 09/21/2026-09/27/2026", "confidence": 0.95, "page_numbers": [1] },
+      "code": { "value": "CR - B2", "citation": "[Page 1] CR - B2", "confidence": 1.0, "page_numbers": [1] },
+      "unit_type": { "value": "2x2", "citation": "[Page 1] B2 - 2x2 - Cedar Ridge", "confidence": 0.9, "page_numbers": [1] },
+      "units": { "value": 16, "citation": "[Page 1] Units 16", "confidence": 0.98, "page_numbers": [1] },
+      "avg_rent": { "value": 1890, "citation": "[Page 1] Avg. Rent 1,890", "confidence": 0.98, "page_numbers": [1] },
+      "vacant": { "value": null, "citation": "", "confidence": 0.6 },
+      "percent_leased": { "value": 93.75, "citation": "[Page 1] % Leased 93.75", "confidence": 0.9, "page_numbers": [1] }
+    }
+  ],
+  "metadata": {
+    "model_calls": 2,
+    "tokens_in": 3900,
+    "tokens_out": 760,
+    "cost_usd": 0.0024,
+    "latency_ms": 9800,
+    "models": {
+      "google/gemini-3.8-flash": { "calls": 2, "tokens_in": 3900, "tokens_out": 760, "cost_usd": 0.0024 }
+    }
+  }
+}

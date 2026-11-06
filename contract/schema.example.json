@@ -1,0 +1,39 @@
+{
+  "name": "boxscore",
+  "description": "Weekly box score summary for a multifamily property: one row per unit type from the Availability table, plus a few values that apply to the whole document.",
+  "fields": {
+    "property_name": {
+      "name": "Property Name",
+      "description": "Property name from the top of the document, below the 'Box Score' heading. Exclude any text in parentheses. Same for every row."
+    },
+    "report_date": {
+      "name": "Report Date",
+      "description": "The end date of the reporting period from the 'Date = ' line, in YYYY-MM-DD. Same for every row."
+    },
+    "code": {
+      "name": "Code",
+      "description": "Unit type code from the 'Code' column of the Availability table, e.g. CR - A1. One per row.",
+      "primary": true
+    },
+    "unit_type": {
+      "name": "Unit Type",
+      "description": "Bedroom/bathroom layout from the 'Name' column, e.g. 1x1, 2x2."
+    },
+    "units": {
+      "name": "Units",
+      "description": "Total number of units of this type, from the 'Units' column. Whole number."
+    },
+    "avg_rent": {
+      "name": "Avg. Rent",
+      "description": "Average rent of this unit type as a number with no currency symbol."
+    },
+    "vacant": {
+      "name": "Vacant",
+      "description": "Number of vacant units of this type, from the 'Vacant' column."
+    },
+    "percent_leased": {
+      "name": "% Leased",
+      "description": "Value of the '% Leased' column exactly as printed, e.g. 93.75."
+    }
+  }
+}
