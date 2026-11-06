@@ -68,6 +68,23 @@ MIGRATIONS: list[str] = [
     CREATE TRIGGER jobs_terminal_guard BEFORE UPDATE ON jobs
         FOR EACH ROW EXECUTE FUNCTION jobs_terminal_is_immutable();
     """,
+    """
+    -- Delivery state lives here, not on jobs, so it can change after a job is terminal.
+    ALTER TABLE job_webhooks
+        ADD COLUMN attempts        integer NOT NULL DEFAULT 0,
+        ADD COLUMN next_attempt_at timestamptz NOT NULL DEFAULT now(),
+        ADD COLUMN delivered_at    timestamptz,
+        ADD COLUMN gave_up_at      timestamptz,
+        ADD COLUMN last_error      text;
+    CREATE INDEX job_webhooks_due ON job_webhooks (next_attempt_at)
+        WHERE delivered_at IS NULL AND gave_up_at IS NULL;
+
+    -- When one worker is rate limited, every worker holds back on that model.
+    CREATE TABLE llm_cooldowns (
+        model  text PRIMARY KEY,
+        until  timestamptz NOT NULL
+    );
+    """,
 ]
 
 

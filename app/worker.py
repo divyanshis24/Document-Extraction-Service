@@ -20,6 +20,7 @@ from app.extractor import Extractor, ExtractionError, ExtractionOutput, StubExtr
 from app.jobs import ClaimedJob, JobStore
 from app.logging_config import configure_logging
 from app.result import build_result
+from app.webhooks import WebhookDispatcher
 
 log = logging.getLogger("app.worker")
 
@@ -28,8 +29,10 @@ _FINISH_RETRIES = 5
 
 
 class Worker:
-    def __init__(self, db: PostgresDatabase, store: JobStore, extractor: Extractor, settings: Settings) -> None:
+    def __init__(self, db: PostgresDatabase, store: JobStore, extractor: Extractor, settings: Settings,
+                 webhooks: WebhookDispatcher | None = None) -> None:
         self._db, self._store, self._extractor, self._settings = db, store, extractor, settings
+        self._webhooks = webhooks or WebhookDispatcher(db, settings)
         self.stop = asyncio.Event()
 
     async def run(self) -> None:
@@ -38,7 +41,10 @@ class Worker:
             return
         log.info("worker started", extra={"concurrency": self._settings.worker_concurrency})
         slots = [self._slot() for _ in range(self._settings.worker_concurrency)]
-        await asyncio.gather(self._sweeper(), *slots)
+        try:
+            await asyncio.gather(self._sweeper(), self._webhook_loop(), *slots)
+        finally:
+            await self._webhooks.close()
         log.info("worker stopped")
 
     async def _migrate(self) -> None:
@@ -86,6 +92,16 @@ class Worker:
             except _DB_ERRORS as exc:
                 log.warning("sweep failed", extra={"error_type": type(exc).__name__})
             await self._sleep(s.sweep_interval_seconds)
+
+    async def _webhook_loop(self) -> None:
+        while not self.stop.is_set():
+            try:
+                delivered = await self._webhooks.run_once()
+            except _DB_ERRORS as exc:
+                log.warning("webhook poll failed", extra={"error_type": type(exc).__name__})
+                delivered = 0
+            if not delivered:
+                await self._sleep(self._settings.webhook_poll_seconds)
 
     async def _heartbeat(self, job: ClaimedJob, lease_lost: asyncio.Event) -> None:
         s = self._settings

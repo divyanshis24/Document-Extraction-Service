@@ -6,7 +6,7 @@ import psycopg
 import pytest
 
 from app.jobs import JobStore, NewJob
-from app.migrations import apply_migrations
+from app.migrations import MIGRATIONS, apply_migrations
 
 LEASE, MAX, DEADLINE = 60, 3, 1740
 
@@ -31,7 +31,7 @@ def test_migrations_are_safe_to_run_concurrently_and_repeatedly(with_store, pg_u
         async with db.pool.connection() as conn:
             await apply_migrations(conn)
             cur = await conn.execute("SELECT count(*) AS n FROM schema_migrations")
-            assert (await cur.fetchone())["n"] == 1
+            assert (await cur.fetchone())["n"] == len(MIGRATIONS)
 
     with_store(body)
 

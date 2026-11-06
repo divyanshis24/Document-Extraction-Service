@@ -3,3 +3,4 @@ uvicorn
 pydantic-settings
 psycopg[binary,pool]
 python-multipart
+httpx

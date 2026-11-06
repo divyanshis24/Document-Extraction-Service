@@ -35,6 +35,9 @@ def configure_logging(level: str = "INFO") -> None:
         # A typo in LOG_LEVEL must not stop the service from starting.
         root.setLevel(logging.INFO)
         root.warning("invalid LOG_LEVEL, using INFO", extra={"log_level": level})
+    # httpx logs every URL at INFO, and webhook URLs can carry secrets.
+    logging.getLogger("httpx").setLevel(logging.WARNING)
+    logging.getLogger("httpcore").setLevel(logging.WARNING)
     # Route uvicorn's logs through the same formatter. Leave uvicorn.access alone:
     # --no-access-log works by turning its propagation off, and re-enabling it
     # would log every /health and job poll.
