@@ -25,3 +25,6 @@ data/
 
 # Submission archive
 *.zip
+
+# Eval cache, ledger and outputs
+.eval/
