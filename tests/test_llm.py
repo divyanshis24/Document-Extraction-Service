@@ -223,6 +223,8 @@ def test_key_and_document_never_reach_logs_or_errors(caplog):
 @pytest.mark.parametrize("text,expected", [
     ('{"a": 1}', {"a": 1}), ('```json\n{"a": 1}\n```', {"a": 1}), ('```\n[1,2]\n```', [1, 2]),
     ('Here it is:\n{"a": 1}\nThanks!', {"a": 1}), ('[{"a": 1}]', [{"a": 1}]),
+    # Raw tab copied from a DOCX table cell, as seen in a real reply for lease_002.
+    ('{"quote": "April 30, 2027\t$2,845.00"}', {"quote": "April 30, 2027\t$2,845.00"}),
 ])
 def test_json_replies_are_parsed(text, expected):
     assert parse_json_reply(text) == expected
@@ -259,6 +261,17 @@ def test_chat_json_treats_cut_off_replies_as_unusable():
         return await client.chat_json(MODEL, MESSAGES, usage)
 
     assert run(s, body)[0] == {"a": 2}
+    assert json.loads(s.requests[1].content)["max_tokens"] == 32_000  # retried with more room
+
+
+def test_cut_off_reply_is_retried_once_with_more_room_then_given_up():
+    s = Script(ok('{"a": 1', finish="length"))
+
+    async def body(client, usage):
+        return await client.chat_json(MODEL, MESSAGES, usage, max_tokens=8000)
+
+    assert isinstance(run(s, body)[0], LLMBadOutput) and len(s.requests) == 2
+    assert [json.loads(r.content)["max_tokens"] for r in s.requests] == [8000, 16000]
 
 
 def test_parse_retry_after_formats():

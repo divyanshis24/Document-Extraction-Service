@@ -55,12 +55,26 @@ async def _migrate_until_done(db: Database, ready: asyncio.Event) -> None:
             await asyncio.sleep(1)
 
 
+async def _sweep_forever(store: JobStore, settings: Settings, ready: asyncio.Event) -> None:
+    """Workers sweep too. This copy makes sure jobs still reach a terminal status when no
+    worker is running, rather than staying PENDING past the harness's deadline."""
+    await ready.wait()
+    while True:
+        await asyncio.sleep(settings.sweep_interval_seconds)
+        try:
+            for row in await store.sweep(settings.job_max_attempts, settings.job_deadline_seconds):
+                log.error("job failed by sweeper", extra={"job_id": str(row["id"]), "error_code": row["error"]["code"]})
+        except Exception as exc:  # noqa: BLE001 - try again next interval
+            log.warning("sweep failed", extra={"error_type": type(exc).__name__})
+
+
 def create_app(settings: Settings | None = None, database: Database | None = None) -> FastAPI:
     settings = settings or Settings()
     configure_logging(settings.log_level)
     db = database or PostgresDatabase(
         settings.database_url.get_secret_value(),
         acquire_timeout_seconds=settings.health_db_timeout_seconds,
+        max_size=settings.api_db_pool_size,
     )
     store = JobStore(db)
     ready = asyncio.Event()
@@ -73,12 +87,14 @@ def create_app(settings: Settings | None = None, database: Database | None = Non
             log.warning("LLM_BASE_URL or LLM_API_KEY is not set; extraction will not work")
         await db.open()
         migrator = asyncio.create_task(_migrate_until_done(db, ready))
+        sweeper = asyncio.create_task(_sweep_forever(store, settings, ready))
         log.info("service started", extra={"version": settings.app_version})
         try:
             yield
         finally:
             migrator.cancel()
-            await asyncio.gather(migrator, return_exceptions=True)
+            sweeper.cancel()
+            await asyncio.gather(migrator, sweeper, return_exceptions=True)
             await db.close()
             log.info("service stopped")
 

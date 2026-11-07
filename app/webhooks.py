@@ -111,15 +111,18 @@ class WebhookDispatcher:
                    "webhook_host": urlsplit(row["url"]).hostname}
         give_up = row["attempts"] >= self._settings.webhook_max_attempts
         try:
-            await check_destination(row["url"], self._settings.webhook_allow_private)
-            response = await self._http.post(row["url"], json=job_view(row), headers={
-                "X-Job-Id": str(row["job_id"]), "X-Delivery-Attempt": str(row["attempts"])})
+            # One bound for the whole delivery. httpx timeouts are per phase and reset on each
+            # chunk, and DNS has none, so a slow receiver could outlast the claim and be sent twice.
+            async with asyncio.timeout(self._settings.webhook_timeout_seconds):
+                await check_destination(row["url"], self._settings.webhook_allow_private)
+                response = await self._http.post(row["url"], json=job_view(row), headers={
+                    "X-Job-Id": str(row["job_id"]), "X-Delivery-Attempt": str(row["attempts"])})
         except _Blocked as exc:
             # Retrying won't help, so stop now.
             await self._mark_failed(row, str(exc), give_up=True)
             log.error("webhook refused", extra={**context, "reason": str(exc)})
             return
-        except (httpx.HTTPError, OSError, ValueError) as exc:
+        except (httpx.HTTPError, OSError, ValueError, TimeoutError) as exc:
             await self._mark_failed(row, type(exc).__name__, give_up)
             log.warning("webhook delivery failed", extra={**context, "reason": type(exc).__name__, "gave_up": give_up})
             return

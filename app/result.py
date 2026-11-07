@@ -5,7 +5,7 @@ import math
 import re
 
 # The validator rejects numbers formatted as money, so convert them.
-_MONEY_RE = re.compile(r"^[$€£₹]\s*[+-]?[\d,]+(\.\d+)?$|^[+-]?\d{1,3}(,\d{3})+(\.\d+)?$")
+_MONEY_RE = re.compile(r"^[$€£₹]\s*[+-]?(\d[\d,]*)(\.\d+)?$|^[+-]?\d{1,3}(,\d{3})+(\.\d+)?$")
 
 
 def _clean_scalar(value):

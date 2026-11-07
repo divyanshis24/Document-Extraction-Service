@@ -85,6 +85,11 @@ MIGRATIONS: list[str] = [
         until  timestamptz NOT NULL
     );
     """,
+    # active_count and the sweep filter on status IN ('PENDING','RUNNING'), which the two
+    # single-status indexes don't serve, so they scanned every job ever submitted.
+    """
+    CREATE INDEX jobs_active ON jobs (status, created_at) WHERE status IN ('PENDING', 'RUNNING');
+    """,
 ]
 
 

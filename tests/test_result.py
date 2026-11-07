@@ -73,3 +73,9 @@ def test_bad_metadata_is_replaced_and_extras_kept():
     assert r["metadata"]["model_calls"] == 0 and r["metadata"]["tokens_in"] == 0
     assert r["metadata"]["cost_usd"] == 0.0 and r["metadata"]["latency_ms"] == 0
     assert r["metadata"]["models"] == {"m": {"calls": 1}}
+
+
+def test_money_text_without_digits_stays_text_instead_of_crashing():
+    from app.result import build_result
+    result = build_result([{"a": {"value": "$,", "citation": "x", "confidence": 1}}], ["a"], {}, 1)
+    assert result["entries"][0]["a"]["value"] == "$,"

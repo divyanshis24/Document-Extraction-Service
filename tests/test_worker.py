@@ -373,3 +373,29 @@ def test_concurrent_workers_process_each_job_exactly_once(with_store):
         assert len(counts) == 20 and set(counts.values()) == {1}
 
     with_store(body)
+
+
+def test_result_that_cannot_be_built_fails_once_instead_of_rerunning(with_store, monkeypatch):
+    import app.worker as worker_module
+
+    def broken_build(*_):
+        raise ValueError("bad output")
+
+    monkeypatch.setattr(worker_module, "build_result", broken_build)
+
+    async def body(db, store):
+        row, _ = await store.submit(new_job())
+
+        async def fn(*_):
+            return ExtractionOutput(entries=[{"a": {"value": 1}}], metadata={})
+
+        fake = Fake(fn)
+
+        async def run(_):
+            return await wait_for_status(store, row["id"], TERMINAL)
+
+        done = await running_worker(db, store, fake, run)
+        assert done["status"] == "FAILED" and done["error"]["code"] == "result_invalid"
+        assert fake.calls == 1  # paid extraction is not repeated
+
+    with_store(body)

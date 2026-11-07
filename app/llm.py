@@ -37,7 +37,22 @@ ALLOWED_MODELS = frozenset({
     "deepseek/deepseek-v3.2",
 })
 
+# Per million tokens (input, output), from the provider's public listing on 2026-11-07. Used
+# only when a gateway returns no cost, so metadata.cost_usd is an estimate in that case.
+_PRICES = {
+    "google/gemini-3.8-flash": (0.83, 4.12),
+    "google/gemini-3.1-pro-preview": (2.00, 12.00),
+    "anthropic/claude-haiku-5.5": (0.10, 0.50),
+    "anthropic/claude-sonnet-5.5": (2.00, 10.00),
+    "openai/gpt-6-luna": (0.10, 0.50),
+    "openai/gpt-6.1-sol": (2.00, 10.00),
+    "z-ai/glm-5.3-flash": (0.15, 0.50),
+    "qwen/qwen3-vl-235b-a22b-instruct": (0.21, 1.90),
+    "deepseek/deepseek-v3.2": (0.26, 0.38),
+}
+
 _UNUSABLE_REPLY_LIMIT = 3
+_MAX_OUTPUT_TOKENS = 32_000
 _DB_ERRORS = (psycopg.Error, PoolTimeout, PoolClosed)
 _PERMANENT_CODES = {401: "llm_auth_failed", 402: "llm_out_of_credits", 403: "llm_auth_failed"}
 
@@ -80,9 +95,15 @@ class Usage:
         if not isinstance(usage, dict):
             return
         entry = self._model(model)
-        entry.tokens_in += _non_negative(usage.get("prompt_tokens"), int)
-        entry.tokens_out += _non_negative(usage.get("completion_tokens"), int)
-        entry.cost_usd += _non_negative(usage.get("cost"), float)
+        tokens_in = _non_negative(usage.get("prompt_tokens"), int)
+        tokens_out = _non_negative(usage.get("completion_tokens"), int)
+        entry.tokens_in += tokens_in
+        entry.tokens_out += tokens_out
+        if isinstance(usage.get("cost"), (int, float)) and not isinstance(usage.get("cost"), bool):
+            entry.cost_usd += _non_negative(usage["cost"], float)
+        else:
+            price_in, price_out = _PRICES.get(model, (0.0, 0.0))
+            entry.cost_usd += (tokens_in * price_in + tokens_out * price_out) / 1_000_000
 
     def as_metadata(self) -> dict:
         items = self.models.values()
@@ -154,7 +175,9 @@ class CooldownGate:
         if self._db is None:
             return 0.0
         try:
-            async with self._db.pool.connection() as conn:
+            # Short wait: this runs before every model call, and a busy pool must not
+            # add seconds to each one. The local cooldown still applies if this fails.
+            async with self._db.pool.connection(timeout=0.5) as conn:
                 cur = await conn.execute(
                     "SELECT extract(epoch FROM until - now())::double precision AS s FROM llm_cooldowns WHERE model = %s",
                     (model,),
@@ -191,8 +214,9 @@ class CooldownGate:
                 return
             if time.monotonic() + remaining >= deadline:
                 raise LLMUnavailable("The model provider's rate limit outlasted the retry budget")
-            # Jitter spreads out the callers waking at the end of the same cooldown.
-            await asyncio.sleep(remaining + random.uniform(0, min(1.0, 0.1 + remaining * 0.1)))
+            # Spread callers over a window proportional to the cooldown. If they all woke
+            # within the same second they would trip the rate limit again together.
+            await asyncio.sleep(remaining + random.uniform(0, min(15.0, 0.5 + remaining * 0.25)))
 
 
 class _Retry(Exception):
@@ -233,7 +257,9 @@ def parse_json_reply(text: str):
     starts = [i for i in (cleaned.find("{"), cleaned.find("[")) if i >= 0]
     if not starts:
         raise ValueError("no JSON found in reply")
-    value, _ = json.JSONDecoder(parse_constant=reject).raw_decode(cleaned[min(starts):])
+    # strict=False accepts raw tabs and newlines inside strings. Models copy them verbatim from
+    # documents (DOCX table cells are tab-separated), and rejecting them fails the whole reply.
+    value, _ = json.JSONDecoder(parse_constant=reject, strict=False).raw_decode(cleaned[min(starts):])
     return value
 
 
@@ -350,11 +376,18 @@ class LLMClient:
     async def chat_json(self, model: str, messages: list[dict], usage: Usage, *, parse_attempts: int = 3, **kwargs):
         """Like chat(), but returns parsed JSON and retries replies that can't be parsed."""
         last = "no reply"
+        grown = False
         for _ in range(max(parse_attempts, 1)):
             result = await self.chat(model, messages, usage, **kwargs)
             if result.finish_reason == "length":
-                # Cut off mid-reply: even if it parses, it's incomplete.
+                # Cut off mid-reply: even if it parses, it's incomplete. The same request
+                # would be cut off the same way, so retry once with more room, then stop.
                 last = "reply was cut off at the token limit"
+                current = kwargs.get("max_tokens")
+                if grown or (current or 0) >= _MAX_OUTPUT_TOKENS:
+                    break
+                kwargs = {**kwargs, "max_tokens": min(current * 2, _MAX_OUTPUT_TOKENS) if current else _MAX_OUTPUT_TOKENS}
+                grown = True
                 continue
             try:
                 return parse_json_reply(result.content)
