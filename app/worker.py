@@ -16,8 +16,10 @@ from psycopg_pool import PoolClosed, PoolTimeout
 
 from app.config import Settings
 from app.db import PostgresDatabase
+from app.extraction.extractor import RealExtractor
 from app.extractor import Extractor, ExtractionError, ExtractionOutput, StubExtractor
 from app.jobs import ClaimedJob, JobStore
+from app.llm import CooldownGate, LLMClient
 from app.logging_config import configure_logging
 from app.result import build_result
 from app.webhooks import WebhookDispatcher
@@ -25,6 +27,10 @@ from app.webhooks import WebhookDispatcher
 log = logging.getLogger("app.worker")
 
 _DB_ERRORS = (psycopg.Error, PoolTimeout, PoolClosed)
+# Errors that may succeed on a retry. A DataError or IntegrityError fails the same way every
+# time, so retrying it or waiting for the lease to expire only reruns paid extraction.
+_TRANSIENT_DB_ERRORS = (psycopg.OperationalError, psycopg.InterfaceError, PoolTimeout, PoolClosed)
+_LOAD_RETRIES = 3
 _FINISH_RETRIES = 5
 
 
@@ -78,9 +84,16 @@ class Worker:
                 continue
             try:
                 await self._process(job)
-            except Exception:  # noqa: BLE001 - one bad job must never stop this slot
-                # The lease will expire and another attempt will pick the job up.
+            except Exception as exc:  # noqa: BLE001 - one bad job must never stop this slot
                 log.exception("worker error while processing job", extra={"job_id": str(job.id)})
+                if not isinstance(exc, _TRANSIENT_DB_ERRORS):
+                    # A bug, not an outage: rerunning would fail the same way after paying
+                    # for the extraction again. Fail it now. Fencing makes this a no-op if
+                    # the job was already finished or taken over.
+                    try:
+                        await self._store.fail(job, "internal_error", "Internal error while processing the job")
+                    except Exception:  # noqa: BLE001 - the lease expiring is the fallback
+                        log.warning("could not mark job failed after an internal error", extra={"job_id": str(job.id)})
 
     async def _sweeper(self) -> None:
         s = self._settings
@@ -116,8 +129,20 @@ class Worker:
                 # another worker took over in the meantime.
                 log.warning("heartbeat failed", extra={"job_id": str(job.id), "error_type": type(exc).__name__})
 
+    async def _load_document(self, job: ClaimedJob) -> bytes:
+        # A blip here would otherwise cost an attempt and a full lease timeout.
+        for attempt in range(_LOAD_RETRIES):
+            try:
+                return await self._store.load_document(job.document_sha256)
+            except _TRANSIENT_DB_ERRORS as exc:
+                if attempt == _LOAD_RETRIES - 1:
+                    raise
+                log.warning("could not load document, retrying", extra={"job_id": str(job.id), "error_type": type(exc).__name__})
+                await asyncio.sleep(1 + attempt)
+        raise AssertionError("unreachable")
+
     async def _extract(self, job: ClaimedJob) -> ExtractionOutput:
-        document = await self._store.load_document(job.document_sha256)
+        document = await self._load_document(job)
 
         async def progress(stage: str) -> None:
             # Stage is advisory, so a database blip here must not end the job.
@@ -175,7 +200,7 @@ class Worker:
 
     async def _finish_work(self, job: ClaimedJob, work: asyncio.Task, job_log: dict, started: float) -> None:
         error = work.exception()
-        if isinstance(error, _DB_ERRORS):
+        if isinstance(error, _TRANSIENT_DB_ERRORS):
             # Our infrastructure failed, not the document, so the job must not end as
             # FAILED. Leave it: the lease expires and another attempt picks it up.
             log.warning("database error during job, it will be retried",
@@ -194,9 +219,18 @@ class Worker:
 
         output = work.result()
         latency_ms = int((job.elapsed_seconds + time.monotonic() - started) * 1000)
-        result = build_result(output.entries, list(job.field_list["fields"]), output.metadata, latency_ms)
         status = "PARTIAL" if output.partial else "SUCCESS"
-        written = await self._with_retry(lambda: self._store.complete(job, status, result), job_log)
+        try:
+            result = build_result(output.entries, list(job.field_list["fields"]), output.metadata, latency_ms)
+            written = await self._with_retry(lambda: self._store.complete(job, status, result), job_log)
+        except Exception as exc:  # noqa: BLE001 - see below
+            if isinstance(exc, _TRANSIENT_DB_ERRORS):
+                raise
+            # The output can't be turned into a valid, storable result. Rerunning would
+            # produce the same output, so fail now rather than pay for it three times.
+            log.error("could not build or store the result", extra=job_log, exc_info=exc)
+            await self._fail(job, "result_invalid", "The extracted result could not be stored", job_log)
+            return
         log.info("job finished" if written else "result discarded, job no longer owned",
                  extra={**job_log, "status": status, "latency_ms": latency_ms,
                         "entries": len(result["entries"]), "cost_usd": result["metadata"]["cost_usd"]})
@@ -211,7 +245,7 @@ class Worker:
         for attempt in range(_FINISH_RETRIES):
             try:
                 return await write()
-            except _DB_ERRORS as exc:
+            except _TRANSIENT_DB_ERRORS as exc:
                 log.warning("could not save job outcome, retrying",
                             extra={**job_log, "error_type": type(exc).__name__})
                 await asyncio.sleep(min(2 ** attempt, 10))
@@ -225,7 +259,12 @@ async def main() -> None:
     db = PostgresDatabase(settings.database_url.get_secret_value(),
                           acquire_timeout_seconds=5.0,
                           max_size=max(settings.worker_concurrency + 2, 5))
-    worker = Worker(db, JobStore(db), StubExtractor(settings.stub_extractor_delay_seconds), settings)
+    client = LLMClient(settings, CooldownGate(db))
+    extractor: Extractor = (StubExtractor(settings.stub_extractor_delay_seconds) if settings.extractor == "stub"
+                            else RealExtractor(client, settings))
+    if settings.extractor != "stub" and not settings.llm_configured:
+        log.warning("LLM_BASE_URL or LLM_API_KEY is not set; jobs will fail with llm_not_configured")
+    worker = Worker(db, JobStore(db), extractor, settings)
     loop = asyncio.get_running_loop()
     for sig in (signal.SIGTERM, signal.SIGINT):
         loop.add_signal_handler(sig, worker.stop.set)
@@ -233,6 +272,7 @@ async def main() -> None:
     try:
         await worker.run()
     finally:
+        await client.close()
         await db.close()
 
 

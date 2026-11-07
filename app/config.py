@@ -24,9 +24,13 @@ class Settings(BaseSettings):
     # API
     max_upload_bytes: int = 50 * 1024 * 1024  # contract limit
     max_active_jobs: int = 10_000  # beyond this POST /jobs returns 429
+    # Health checks, polls and uploads share these. 5 ran out under 20 concurrent uploads.
+    api_db_pool_size: int = 20
 
     # Worker
-    worker_concurrency: int = 5
+    # Slots spend nearly all their time waiting on the model, so a process can run many.
+    # Each process holds up to concurrency + 2 database connections.
+    worker_concurrency: int = 15
     worker_poll_seconds: float = 0.5
     job_lease_seconds: float = 60.0  # a dead worker's job is retried after this long
     job_max_attempts: int = 3  # stops a document that kills workers from looping forever
@@ -40,6 +44,18 @@ class Settings(BaseSettings):
     llm_max_concurrent: int = 20  # in-flight requests per worker process
     llm_backoff_base_seconds: float = 1.0
     llm_backoff_max_seconds: float = 60.0
+
+    # Extraction. Every model must be on the allowed list in app/llm.py.
+    llm_model_fast: str = "anthropic/claude-haiku-5.5"  # first reads and row filling
+    llm_model_strong: str = "anthropic/claude-sonnet-5.5"  # plans, computed fields, rechecks
+    llm_model_table: str = "anthropic/claude-haiku-5.5"  # tables read page by page
+    llm_model_vision: str = "anthropic/claude-haiku-5.5"  # scanned pages
+    extraction_parallel_calls: int = 6  # concurrent model calls per document
+    max_vision_pages: int = 300
+    max_cost_per_document_usd: float = 1.0  # past this, optional recheck passes are skipped
+
+    # "real" or "stub". The stub makes no model calls, for load and crash testing.
+    extractor: str = "real"
 
     # Webhooks
     webhook_timeout_seconds: float = 10.0
