@@ -43,7 +43,6 @@ class Page:
     label: str  # how citations refer to this unit, e.g. "Page 3"
     text: str = ""
     needs_vision: bool = False
-    image_jpeg: bytes | None = None
     unreadable: bool = False
 
 
@@ -155,10 +154,14 @@ def _image_coverage(page: pymupdf.Page) -> float:
     return min(covered / area, 1.0)
 
 
-def _render_jpeg(page: pymupdf.Page) -> bytes:
-    long_side = max(page.rect.width, page.rect.height) or 1
-    zoom = min(_RENDER_LONG_SIDE_PX / long_side, 3.0)
-    return page.get_pixmap(matrix=pymupdf.Matrix(zoom, zoom), colorspace=pymupdf.csGRAY, alpha=False).tobytes("jpeg", jpg_quality=75)
+def render_page_jpeg(content: bytes, number: int) -> bytes:
+    """One page as a greyscale JPEG, rendered on demand so a 300-page scan never holds
+    300 images in memory at once. CPU-bound: call it in a thread."""
+    with pymupdf.open(stream=content, filetype="pdf") as pdf:
+        page = pdf[number - 1]
+        long_side = max(page.rect.width, page.rect.height) or 1
+        zoom = min(_RENDER_LONG_SIDE_PX / long_side, 3.0)
+        return page.get_pixmap(matrix=pymupdf.Matrix(zoom, zoom), colorspace=pymupdf.csGRAY, alpha=False).tobytes("jpeg", jpg_quality=75)
 
 
 def _parse_pdf(content: bytes) -> ParsedDocument:
@@ -175,7 +178,6 @@ def _parse_pdf(content: bytes) -> ParsedDocument:
                 chars = len(entry.text.strip())
                 if chars < _MIN_TEXT_CHARS or (chars < _IMAGE_PAGE_MAX_CHARS and _image_coverage(page) >= _IMAGE_PAGE_COVERAGE):
                     entry.needs_vision = True
-                    entry.image_jpeg = _render_jpeg(page)
             except Exception as exc:  # noqa: BLE001 - one bad page must not lose the others
                 entry.unreadable = True
                 parsed.warnings.append(f"Page {index} could not be read ({type(exc).__name__})")
@@ -245,7 +247,7 @@ def _xml_blocks(container):
 
 
 def _docx_blocks(document: DocxDocument):
-    # Headers and footers often hold the property, parties or date. Each distinct one once.
+    # Headers and footers often hold the title, the parties or the date. Each distinct one once.
     seen: set[str] = set()
     for section in document.sections:
         for part in (section.header, section.footer):

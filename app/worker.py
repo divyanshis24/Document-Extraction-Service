@@ -17,7 +17,8 @@ from psycopg_pool import PoolClosed, PoolTimeout
 from app.config import Settings
 from app.db import PostgresDatabase
 from app.extraction.extractor import RealExtractor
-from app.extractor import Extractor, ExtractionError, ExtractionOutput, StubExtractor
+from app.errors import ExtractionError
+from app.extractor import Extractor, ExtractionOutput, StubExtractor
 from app.jobs import ClaimedJob, JobStore
 from app.llm import CooldownGate, LLMClient
 from app.logging_config import configure_logging

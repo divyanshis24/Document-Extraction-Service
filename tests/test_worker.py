@@ -7,7 +7,8 @@ from pathlib import Path
 import psycopg
 
 from app.config import Settings
-from app.extractor import ExtractionError, ExtractionOutput, StubExtractor
+from app.errors import ExtractionError
+from app.extractor import ExtractionOutput, StubExtractor
 from app.jobs import NewJob
 from app.worker import Worker
 

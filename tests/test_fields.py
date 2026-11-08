@@ -88,7 +88,7 @@ def test_list_items_are_typed_by_what_the_list_is_of():
     from app.extraction.fields import load_fields
     specs = {s.key: s.item_kind for s in load_fields({"fields": {
         "starts": {"description": "List of the start date of each rent period, in order."},
-        "rents": {"description": "List of the monthly base rent for each period, aligned item by item with the start dates."},
+        "rents": {"description": "List of the amount due for each period, aligned item by item with the start dates."},
         "terms": {"description": "List of the length of each renewal option in months."},
         "brokers": {"description": "List of the brokerage firms named in the lease."},
     }})}

@@ -7,7 +7,7 @@ import pymupdf
 import pytest
 
 from app.errors import ExtractionError
-from app.extraction.parsing import format_cell, parse_document
+from app.extraction.parsing import format_cell, parse_document, render_page_jpeg
 
 
 def xlsx(build):
@@ -155,9 +155,10 @@ def test_pdf_page_without_text_is_sent_to_vision_and_text_page_is_not():
         blank = doc.new_page()
         blank.draw_rect(pymupdf.Rect(50, 50, 300, 300), fill=(0, 0, 0))
 
-    pages = parse_document(pdf(build), "pdf").pages
-    assert not pages[0].needs_vision and pages[0].image_jpeg is None
-    assert pages[1].needs_vision and pages[1].image_jpeg[:2] == b"\xff\xd8"
+    content = pdf(build)
+    pages = parse_document(content, "pdf").pages
+    assert not pages[0].needs_vision and pages[1].needs_vision
+    assert render_page_jpeg(content, 2)[:2] == b"\xff\xd8"  # rendered on demand, not at parse time
 
 
 def test_password_protected_pdf_says_so():

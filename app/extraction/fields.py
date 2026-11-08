@@ -23,18 +23,18 @@ _CHOICES = re.compile(r"\bone of\s*:?\s*(.+?)(?:\.\s|\.$|;|$)", re.I)
 _LIST = re.compile(r"\blists? of\b", re.I)
 _BOOL = re.compile(r"^\s*(true if|whether\b.*\btrue\b)", re.I)
 _NUMBER = re.compile(r"\b(as a (percentage )?number|whole number|numbers only|four-digit (number|year)|as a number)\b", re.I)
-_NOT_NUMBER = re.compile(r"\b(wording|as a string|short phrase|in words|verbatim|as stated|as the lease states|describe\w*)\b", re.I)
+_NOT_NUMBER = re.compile(r"\b(wording|as a string|short phrase|in words|verbatim|as stated|describe\w*)\b", re.I)
 # Fallback cues, used only when neither explicit wording nor a model answer decides.
-_NUMBER_HINT = re.compile(r"(\bin (us )?dollars\b|\(\$\)|\$|\busd\b|\bamount\b|\bsquare f(ee|oo)t\w*|\bsq\.? ?ft\b|\bhow many\b|"
-                          r"\bcount\b|\bnumber of\b|\bpercent\w*|\(%\)|\brate\b|\bratio\b|\bprice\b|\bcost\b|\brent\b|"
-                          r"\bfee\b|\bbalance\b|\bdeposit\b|\bnoi\b|\bincome\b|\bexpense\b|\byear (built|renovated)\b|"
-                          r"\bacres?\b|\bunits\b|\bin months\b|\bin years\b)", re.I)
+_NUMBER_HINT = re.compile(r"(\bin (us )?dollars\b|\(\$\)|\$|\b(usd|eur|gbp)\b|\bamount\b|\bhow many\b|\bhow much\b|\bcount\b|"
+                          r"\bnumber of\b|\bquantity\b|\bpercent\w*|\(%\)|\brate\b|\bratio\b|\bprice\b|\bcost\b|\bfee\b|"
+                          r"\bbalance\b|\btotal\b|\barea\b|\bsize\b|\bin (months|years|days|weeks|hours)\b|\byear (of|the)\b|"
+                          r"\bin (square|sq\.?) ?(feet|ft|metres|meters|m)\b)", re.I)
 _DATE_HINT = re.compile(r"\b(date|dated|when|expir\w*|commence\w*|as of|as-of|start|end|begin\w*)\b", re.I)
 _DOC_LEVEL_HINT = re.compile(r"\b(report header|page header|top of the (report|page|document)|applies to (all|every)|"
                              r"repeated (on|for|in) (each|every|all)|for the whole (report|statement|document))\b", re.I)
 _LIST_HINT = re.compile(r"\b(as a list|as an array|list them|one item per)\b", re.I)
 KINDS = ("text", "number", "date", "bool", "list")
-# A cell that marks absence rather than holding a value: "-", "--", "-- Vacant --".
+# A cell that marks absence rather than holding a value: "-", "--", "-- None --".
 _PLACEHOLDER = re.compile(r"[-\u2013\u2014]+|[-\u2013\u2014]{1,3}\s*[A-Za-z][A-Za-z ]*?\s*[-\u2013\u2014]{1,3}")
 _DATE_FORMATS = ("%Y-%m-%d", "%m/%d/%Y", "%m/%d/%y", "%m-%d-%Y", "%B %d, %Y", "%b %d, %Y", "%B %d %Y", "%b %d %Y",
                  "%d %B %Y", "%d %b %Y", "%Y/%m/%d", "%Y-%m-%dT%H:%M:%S", "%Y-%m-%d %H:%M:%S")
@@ -75,8 +75,8 @@ def _is_date(key: str, description: str) -> bool:
 
 
 _LIST_NOUN = re.compile(r"\blists? of (?:the |all |each )?(.+?)(?=\b(?:for|of|in|named|that|which|aligned|from)\b|[,.(;:]|$)", re.I)
-_NUMBER_NOUN = re.compile(r"\b(rents?|amounts?|prices?|costs?|fees?|months?|years?|days?|rates?|counts?|numbers?|"
-                          r"percent\w*|square f\w*|rsf|sf|dollars?|payments?|values?)\b", re.I)
+_NUMBER_NOUN = re.compile(r"\b(amounts?|prices?|costs?|fees?|months?|years?|days?|rates?|counts?|numbers?|"
+                          r"percent\w*|dollars?|payments?|values?|quantit\w*|totals?)\b", re.I)
 
 
 def _choices(description: str) -> tuple[str, ...]:
@@ -91,8 +91,8 @@ def _choices(description: str) -> tuple[str, ...]:
 def _list_item_kind(description: str) -> str:
     """What one item of a list is, judged by the noun the list is of.
 
-    "List of the monthly base rent for each period, aligned with the start dates" is a list
-    of numbers, even though it mentions dates, so the whole description can't decide it.
+    "List of the amount for each period, aligned with the start dates" is a list of numbers,
+    even though it mentions dates, so the whole description can't decide it.
     """
     if re.search(r"\bnumbers? only\b", description, re.I):
         return "number"
@@ -100,7 +100,7 @@ def _list_item_kind(description: str) -> str:
     noun = match.group(1) if match else ""
     if re.search(r"\bdates?\b", noun, re.I):
         return "date"
-    if _NUMBER_NOUN.search(noun) or re.search(r"\bin (months|years|days)\b|\bper rentable\b", description, re.I):
+    if _NUMBER_NOUN.search(noun) or re.search(r"\bin (months|years|days)\b", description, re.I):
         return "number"
     return "text"
 
@@ -126,7 +126,7 @@ def _explicit_kind(key: str, description: str) -> str | None:
 
 def _guessed_kind(key: str, description: str) -> str:
     """Fallback when nothing explicit and no model answer: broad cues from wording and key."""
-    # Examples ("e.g. 'Rent Revenue'") and quoted names say what the value looks like, not
+    # Examples ("e.g. 'Section A'") and quoted names say what the value looks like, not
     # what it is, so they are not cues. A "%" anywhere is, even in a quoted column name.
     plain = re.sub(r"\be\.g\.[^.;)]*|'[^']*'|\"[^\"]*\"", " ", description)
     words = f"{key.replace('_', ' ')} {plain}"
@@ -274,7 +274,7 @@ def coerce(value, spec: FieldSpec):
 
 
 def _without_own_name(value: str, name: str) -> str:
-    """'Fairhaven Airport submarket' for a field named Submarket is 'Fairhaven Airport'.
+    """'Northside district' for a field named District is 'Northside'.
 
     Only for short values such as names, where the trailing word is a label rather than
     part of a sentence, only when it is written in lowercase (so "Oklahoma City" keeps its

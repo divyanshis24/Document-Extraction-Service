@@ -22,10 +22,10 @@ class PlanError(ValueError):
 
 
 PLAN_RULES = """Rules you may use for each field:
-- {"rule":"document","value":<value>,"cell":"A3"}: one value for the whole document, read from that cell. Put the cleaned value in "value" (dates as YYYY-MM-DD).
+- {"rule":"document","value":<value>,"cell":"A3"}: one value for the whole document, read from that cell. "value" is what the cell prints with only a label such as "Name =" removed: keep every part of a name, code or identifier exactly as written (dates as YYYY-MM-DD).
 - {"rule":"column","column":"F","default":<optional>}: the value in that column on the row's first row.
-- {"rule":"block_match","match_column":"H","match":"Rent","value_column":"I","default":<optional>}: when one logical row spans several sheet rows, find the row in the block where match_column equals match, and take value_column from it.
-- {"rule":"block_sum","value_column":"I","match_column":"H","exclude":["Rent"],"default":<optional>}: sum value_column over rows of the block that have a non-empty match_column, except those listed.
+- {"rule":"block_match","match_column":"H","match":"Tax","value_column":"I","default":<optional>}: when one logical row spans several sheet rows, find the row in the block where match_column equals match, and take value_column from it.
+- {"rule":"block_sum","value_column":"I","match_column":"H","exclude":["Tax"],"default":<optional>}: sum value_column over rows of the block that have a non-empty match_column, except those listed.
 - {"rule":"row_stat","stat":"count_nonzero","columns":["C","D"]}: count of cells in those columns (list every column) on the row's first row that hold a non-zero number. "stat" may also be "sum".
 - {"rule":"nearest_above","column":"B","require_empty_columns":["C"]}: the value in that column from the nearest row above that is a header, meaning those columns are empty on it.
 - {"rule":"llm"}: use only when the value needs judgement that the rules above can't express.
@@ -90,7 +90,7 @@ def find_blocks(sheet: Sheet, plan: dict) -> list[Block]:
     # Every row that looks like a start ends the previous block, even if it is itself
     # filtered out, so a skipped row's lines can't leak into its neighbour. So does a row
     # that can't belong to a block: a section heading in the start column ("Status Summary"),
-    # or a total labelled on the left ("Property Total:"). Without this the last row of a
+    # or a total labelled on the left ("Grand Total:"). Without this the last row of a
     # table swallows the grand total and every summary section below it.
     starts: list[int] = []
     breaks: list[int] = []
@@ -280,8 +280,8 @@ def execute_plan(parsed: ParsedDocument, plan: dict, specs: list[FieldSpec]) -> 
         raise PlanError("plan produced no primary values")
     if len({str(p) for _, _, p in kept}) < len(kept) * 0.9:
         raise PlanError("plan produced mostly duplicate primary values")
-    # A few repeats come from a later section listing the same rows again (future residents,
-    # a recap). The first listing is the main table, so keep that one.
+    # A few repeats come from a later section listing the same rows again (a recap or an
+    # appendix). The first listing is the main table, so keep that one.
     seen: set[str] = set()
     kept = [k for k in kept if not (str(k[2]) in seen or seen.add(str(k[2])))]
     return PlanResult(entries=[k[0] for k in kept], blocks=[k[1] for k in kept], sheet=sheet,

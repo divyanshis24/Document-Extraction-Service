@@ -223,7 +223,7 @@ def test_key_and_document_never_reach_logs_or_errors(caplog):
 @pytest.mark.parametrize("text,expected", [
     ('{"a": 1}', {"a": 1}), ('```json\n{"a": 1}\n```', {"a": 1}), ('```\n[1,2]\n```', [1, 2]),
     ('Here it is:\n{"a": 1}\nThanks!', {"a": 1}), ('[{"a": 1}]', [{"a": 1}]),
-    # Raw tab copied from a DOCX table cell, as seen in a real reply for lease_002.
+    # Raw tab copied from a DOCX table cell, which strict JSON rejects.
     ('{"quote": "April 30, 2027\t$2,845.00"}', {"quote": "April 30, 2027\t$2,845.00"}),
 ])
 def test_json_replies_are_parsed(text, expected):

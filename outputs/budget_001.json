@@ -1,0 +1,6203 @@
+{
+ "entries": [
+  {
+   "budget": {
+    "value": 7165444,
+    "citation": "[Page 1] 7165444",
+    "confidence": 0.8,
+    "page_numbers": [
+     1
+    ]
+   },
+   "gl_code": {
+    "value": "6101-0000",
+    "citation": "[Page 1] 6101-0000",
+    "confidence": 0.8,
+    "page_numbers": [
+     1
+    ]
+   },
+   "section": {
+    "value": "Rent Revenue",
+    "citation": "[Page 1] Rent Revenue",
+    "confidence": 0.8,
+    "page_numbers": [
+     1
+    ]
+   },
+   "line_item": {
+    "value": "Minimum Base Rent",
+    "citation": "[Page 1] Minimum Base Rent",
+    "confidence": 0.8,
+    "page_numbers": [
+     1
+    ]
+   },
+   "budget_year": {
+    "value": 2021,
+    "citation": "[Page 1] 2021",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_rsf": {
+    "value": 339050,
+    "citation": "[Page 1] 339050",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_name": {
+    "value": "Lakeview Tower",
+    "citation": "[Page 1] Lakeview Tower",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "prior_year_budget": {
+    "value": 7481754,
+    "citation": "[Page 1] 7481754",
+    "confidence": 0.8,
+    "page_numbers": [
+     1
+    ]
+   },
+   "prior_year_reforecast": {
+    "value": 7488382,
+    "citation": "[Page 1] 7488382",
+    "confidence": 0.8,
+    "page_numbers": [
+     1
+    ]
+   },
+   "explanation_of_variance": {
+    "value": null,
+    "citation": "",
+    "confidence": 0.8
+   },
+   "budget_vs_reforecast_pct": {
+    "value": -4.31,
+    "citation": "[Page 1] -4.31",
+    "confidence": 0.8,
+    "page_numbers": [
+     1
+    ]
+   },
+   "budget_vs_reforecast_variance": {
+    "value": -322938,
+    "citation": "[Page 1] -322938",
+    "confidence": 0.8,
+    "page_numbers": [
+     1
+    ]
+   },
+   "reforecast_vs_prior_budget_pct": {
+    "value": 0.09,
+    "citation": "[Page 1] 0.09",
+    "confidence": 0.8,
+    "page_numbers": [
+     1
+    ]
+   },
+   "reforecast_vs_prior_budget_variance": {
+    "value": 6628,
+    "citation": "[Page 1] 6628",
+    "confidence": 0.8,
+    "page_numbers": [
+     1
+    ]
+   }
+  },
+  {
+   "budget": {
+    "value": -328372,
+    "citation": "[Page 1] -328372",
+    "confidence": 0.8,
+    "page_numbers": [
+     1
+    ]
+   },
+   "gl_code": {
+    "value": "6102-0000",
+    "citation": "[Page 1] 6102-0000",
+    "confidence": 0.8,
+    "page_numbers": [
+     1
+    ]
+   },
+   "section": {
+    "value": "Rent Revenue",
+    "citation": "[Page 1] Rent Revenue",
+    "confidence": 0.8,
+    "page_numbers": [
+     1
+    ]
+   },
+   "line_item": {
+    "value": "Rent Abatement",
+    "citation": "[Page 1] Rent Abatement",
+    "confidence": 0.8,
+    "page_numbers": [
+     1
+    ]
+   },
+   "budget_year": {
+    "value": 2021,
+    "citation": "[Page 1] 2021",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_rsf": {
+    "value": 339050,
+    "citation": "[Page 1] 339050",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_name": {
+    "value": "Lakeview Tower",
+    "citation": "[Page 1] Lakeview Tower",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "prior_year_budget": {
+    "value": -487261,
+    "citation": "[Page 1] -487261",
+    "confidence": 0.8,
+    "page_numbers": [
+     1
+    ]
+   },
+   "prior_year_reforecast": {
+    "value": -715191,
+    "citation": "[Page 1] -715191",
+    "confidence": 0.8,
+    "page_numbers": [
+     1
+    ]
+   },
+   "explanation_of_variance": {
+    "value": "The Meridian Refurbishment Allowance of $468,950 was coded as an abatement in 2020.",
+    "citation": "[Page 1] The Meridian Refurbishment Allowance of $468,950 was coded as an abatement in 2020.",
+    "confidence": 0.8,
+    "page_numbers": [
+     1
+    ]
+   },
+   "budget_vs_reforecast_pct": {
+    "value": 54.09,
+    "citation": "[Page 1] 54.09",
+    "confidence": 0.8,
+    "page_numbers": [
+     1
+    ]
+   },
+   "budget_vs_reforecast_variance": {
+    "value": 386820,
+    "citation": "[Page 1] 386820",
+    "confidence": 0.8,
+    "page_numbers": [
+     1
+    ]
+   },
+   "reforecast_vs_prior_budget_pct": {
+    "value": -46.78,
+    "citation": "[Page 1] -46.78",
+    "confidence": 0.8,
+    "page_numbers": [
+     1
+    ]
+   },
+   "reforecast_vs_prior_budget_variance": {
+    "value": -227930,
+    "citation": "[Page 1] -227930",
+    "confidence": 0.8,
+    "page_numbers": [
+     1
+    ]
+   }
+  },
+  {
+   "budget": {
+    "value": 105497,
+    "citation": "[Page 1] 105497",
+    "confidence": 0.8,
+    "page_numbers": [
+     1
+    ]
+   },
+   "gl_code": {
+    "value": "6105-0000",
+    "citation": "[Page 1] 6105-0000",
+    "confidence": 0.8,
+    "page_numbers": [
+     1
+    ]
+   },
+   "section": {
+    "value": "Other Rental Revenue",
+    "citation": "[Page 1] Other Rental Revenue",
+    "confidence": 0.8,
+    "page_numbers": [
+     1
+    ]
+   },
+   "line_item": {
+    "value": "Parking Income",
+    "citation": "[Page 1] Parking Income",
+    "confidence": 0.8,
+    "page_numbers": [
+     1
+    ]
+   },
+   "budget_year": {
+    "value": 2021,
+    "citation": "[Page 1] 2021",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_rsf": {
+    "value": 339050,
+    "citation": "[Page 1] 339050",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_name": {
+    "value": "Lakeview Tower",
+    "citation": "[Page 1] Lakeview Tower",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "prior_year_budget": {
+    "value": 216185,
+    "citation": "[Page 1] 216185",
+    "confidence": 0.8,
+    "page_numbers": [
+     1
+    ]
+   },
+   "prior_year_reforecast": {
+    "value": 58190,
+    "citation": "[Page 1] 58190",
+    "confidence": 0.8,
+    "page_numbers": [
+     1
+    ]
+   },
+   "explanation_of_variance": {
+    "value": "Starting in April 2020 monthly parking accounts were put on hold due to the pandemic and tenants working from home. The garage operated at less then 20% of normal activity. To mitigate the losses, the garage has only 1 attendant (versus 3 attendants) for the rest of 2020. In 2021 we are assuming only 1 attendant as well. The projections for 2021 are assuming the first quarter is at the 2020 level then it ramps up to about 80% of 2020 budget by the end of 2021.",
+    "citation": "[Page 1] Starting in April 2020 monthly parking accounts were put on hold due to the pandemic and tenants working from home. The garage operated at less then 20% of normal activity. To mitigate the losses, the garage has only 1 attendant (versus 3 attendants) for the rest of 2020. In 2021 we are assuming only 1 attendant as well. The projections for 2021 are assuming the first quarter is at the 2020 level then it ramps up to about 80% of 2020 budget by the end of 2021.",
+    "confidence": 0.8,
+    "page_numbers": [
+     1
+    ]
+   },
+   "budget_vs_reforecast_pct": {
+    "value": 81.3,
+    "citation": "[Page 1] 81.3",
+    "confidence": 0.8,
+    "page_numbers": [
+     1
+    ]
+   },
+   "budget_vs_reforecast_variance": {
+    "value": 47307,
+    "citation": "[Page 1] 47307",
+    "confidence": 0.8,
+    "page_numbers": [
+     1
+    ]
+   },
+   "reforecast_vs_prior_budget_pct": {
+    "value": -73.08,
+    "citation": "[Page 1] -73.08",
+    "confidence": 0.8,
+    "page_numbers": [
+     1
+    ]
+   },
+   "reforecast_vs_prior_budget_variance": {
+    "value": -157995,
+    "citation": "[Page 1] -157995",
+    "confidence": 0.8,
+    "page_numbers": [
+     1
+    ]
+   }
+  },
+  {
+   "budget": {
+    "value": 21240,
+    "citation": "[Page 1] 21240",
+    "confidence": 0.8,
+    "page_numbers": [
+     1
+    ]
+   },
+   "gl_code": {
+    "value": "6108-0000",
+    "citation": "[Page 1] 6108-0000",
+    "confidence": 0.8,
+    "page_numbers": [
+     1
+    ]
+   },
+   "section": {
+    "value": "Other Rental Revenue",
+    "citation": "[Page 1] Other Rental Revenue",
+    "confidence": 0.8,
+    "page_numbers": [
+     1
+    ]
+   },
+   "line_item": {
+    "value": "Utility Charges",
+    "citation": "[Page 1] Utility Charges",
+    "confidence": 0.8,
+    "page_numbers": [
+     1
+    ]
+   },
+   "budget_year": {
+    "value": 2021,
+    "citation": "[Page 1] 2021",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_rsf": {
+    "value": 339050,
+    "citation": "[Page 1] 339050",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_name": {
+    "value": "Lakeview Tower",
+    "citation": "[Page 1] Lakeview Tower",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "prior_year_budget": {
+    "value": 27000,
+    "citation": "[Page 1] 27000",
+    "confidence": 0.8,
+    "page_numbers": [
+     1
+    ]
+   },
+   "prior_year_reforecast": {
+    "value": 24812,
+    "citation": "[Page 1] 24812",
+    "confidence": 0.8,
+    "page_numbers": [
+     1
+    ]
+   },
+   "explanation_of_variance": {
+    "value": null,
+    "citation": "",
+    "confidence": 0.8
+   },
+   "budget_vs_reforecast_pct": {
+    "value": -14.4,
+    "citation": "[Page 1] -14.4",
+    "confidence": 0.8,
+    "page_numbers": [
+     1
+    ]
+   },
+   "budget_vs_reforecast_variance": {
+    "value": -3572,
+    "citation": "[Page 1] -3572",
+    "confidence": 0.8,
+    "page_numbers": [
+     1
+    ]
+   },
+   "reforecast_vs_prior_budget_pct": {
+    "value": -8.1,
+    "citation": "[Page 1] -8.1",
+    "confidence": 0.8,
+    "page_numbers": [
+     1
+    ]
+   },
+   "reforecast_vs_prior_budget_variance": {
+    "value": -2188,
+    "citation": "[Page 1] -2188",
+    "confidence": 0.8,
+    "page_numbers": [
+     1
+    ]
+   }
+  },
+  {
+   "budget": {
+    "value": 36000,
+    "citation": "[Page 1] 36000",
+    "confidence": 0.8,
+    "page_numbers": [
+     1
+    ]
+   },
+   "gl_code": {
+    "value": "6109-0000",
+    "citation": "[Page 1] 6109-0000",
+    "confidence": 0.8,
+    "page_numbers": [
+     1
+    ]
+   },
+   "section": {
+    "value": "Other Rental Revenue",
+    "citation": "[Page 1] Other Rental Revenue",
+    "confidence": 0.8,
+    "page_numbers": [
+     1
+    ]
+   },
+   "line_item": {
+    "value": "Tenant Service - Revenue",
+    "citation": "[Page 1] Tenant Service - Revenue",
+    "confidence": 0.8,
+    "page_numbers": [
+     1
+    ]
+   },
+   "budget_year": {
+    "value": 2021,
+    "citation": "[Page 1] 2021",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_rsf": {
+    "value": 339050,
+    "citation": "[Page 1] 339050",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_name": {
+    "value": "Lakeview Tower",
+    "citation": "[Page 1] Lakeview Tower",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "prior_year_budget": {
+    "value": 50000,
+    "citation": "[Page 1] 50000",
+    "confidence": 0.8,
+    "page_numbers": [
+     1
+    ]
+   },
+   "prior_year_reforecast": {
+    "value": 22309,
+    "citation": "[Page 1] 22309",
+    "confidence": 0.8,
+    "page_numbers": [
+     1
+    ]
+   },
+   "explanation_of_variance": {
+    "value": "Due to the pandemic and low tenant population in the building, tenant services requests and reimbursements are much less in 2020 compared to budget.",
+    "citation": "[Page 1] Due to the pandemic and low tenant population in the building, tenant services requests and reimbursements are much less in 2020 compared to budget.",
+    "confidence": 0.8,
+    "page_numbers": [
+     1
+    ]
+   },
+   "budget_vs_reforecast_pct": {
+    "value": 61.37,
+    "citation": "[Page 1] 61.37",
+    "confidence": 0.8,
+    "page_numbers": [
+     1
+    ]
+   },
+   "budget_vs_reforecast_variance": {
+    "value": 13691,
+    "citation": "[Page 1] 13691",
+    "confidence": 0.8,
+    "page_numbers": [
+     1
+    ]
+   },
+   "reforecast_vs_prior_budget_pct": {
+    "value": -55.38,
+    "citation": "[Page 1] -55.38",
+    "confidence": 0.8,
+    "page_numbers": [
+     1
+    ]
+   },
+   "reforecast_vs_prior_budget_variance": {
+    "value": -27691,
+    "citation": "[Page 1] -27691",
+    "confidence": 0.8,
+    "page_numbers": [
+     1
+    ]
+   }
+  },
+  {
+   "budget": {
+    "value": 0,
+    "citation": "[Page 2] 0",
+    "confidence": 0.8,
+    "page_numbers": [
+     2
+    ]
+   },
+   "gl_code": {
+    "value": "6110-0000",
+    "citation": "[Page 2] 6110-0000",
+    "confidence": 0.8,
+    "page_numbers": [
+     2
+    ]
+   },
+   "section": {
+    "value": "Other Rental Revenue",
+    "citation": "[Page 1] Other Rental Revenue",
+    "confidence": 0.75,
+    "page_numbers": [
+     1
+    ]
+   },
+   "line_item": {
+    "value": "Interest Income",
+    "citation": "[Page 2] Interest Income",
+    "confidence": 0.8,
+    "page_numbers": [
+     2
+    ]
+   },
+   "budget_year": {
+    "value": 2021,
+    "citation": "[Page 1] 2021",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_rsf": {
+    "value": 339050,
+    "citation": "[Page 1] 339050",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_name": {
+    "value": "Lakeview Tower",
+    "citation": "[Page 1] Lakeview Tower",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "prior_year_budget": {
+    "value": 24000,
+    "citation": "[Page 2] 24000",
+    "confidence": 0.8,
+    "page_numbers": [
+     2
+    ]
+   },
+   "prior_year_reforecast": {
+    "value": 7288,
+    "citation": "[Page 2] 7288",
+    "confidence": 0.8,
+    "page_numbers": [
+     2
+    ]
+   },
+   "explanation_of_variance": {
+    "value": "Lower interest income in 2020. No interest income budgeted in 2021 due to low interest rates.",
+    "citation": "[Page 2] Lower interest income in 2020. No interest income budgeted in 2021 due to low interest rates.",
+    "confidence": 0.8,
+    "page_numbers": [
+     2
+    ]
+   },
+   "budget_vs_reforecast_pct": {
+    "value": -100.0,
+    "citation": "[Page 2] -100",
+    "confidence": 0.8,
+    "page_numbers": [
+     2
+    ]
+   },
+   "budget_vs_reforecast_variance": {
+    "value": -7288,
+    "citation": "[Page 2] -7288",
+    "confidence": 0.8,
+    "page_numbers": [
+     2
+    ]
+   },
+   "reforecast_vs_prior_budget_pct": {
+    "value": -69.63,
+    "citation": "[Page 2] -69.63",
+    "confidence": 0.8,
+    "page_numbers": [
+     2
+    ]
+   },
+   "reforecast_vs_prior_budget_variance": {
+    "value": -16712,
+    "citation": "[Page 2] -16712",
+    "confidence": 0.8,
+    "page_numbers": [
+     2
+    ]
+   }
+  },
+  {
+   "budget": {
+    "value": 20004,
+    "citation": "[Page 2] 20004",
+    "confidence": 0.8,
+    "page_numbers": [
+     2
+    ]
+   },
+   "gl_code": {
+    "value": "6116-0000",
+    "citation": "[Page 2] 6116-0000",
+    "confidence": 0.8,
+    "page_numbers": [
+     2
+    ]
+   },
+   "section": {
+    "value": "Other Rental Revenue",
+    "citation": "[Page 1] Other Rental Revenue",
+    "confidence": 0.75,
+    "page_numbers": [
+     1
+    ]
+   },
+   "line_item": {
+    "value": "Other Building Revenues",
+    "citation": "[Page 2] Other Building Revenues",
+    "confidence": 0.8,
+    "page_numbers": [
+     2
+    ]
+   },
+   "budget_year": {
+    "value": 2021,
+    "citation": "[Page 1] 2021",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_rsf": {
+    "value": 339050,
+    "citation": "[Page 1] 339050",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_name": {
+    "value": "Lakeview Tower",
+    "citation": "[Page 1] Lakeview Tower",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "prior_year_budget": {
+    "value": 20000,
+    "citation": "[Page 2] 20000",
+    "confidence": 0.8,
+    "page_numbers": [
+     2
+    ]
+   },
+   "prior_year_reforecast": {
+    "value": 19839,
+    "citation": "[Page 2] 19839",
+    "confidence": 0.8,
+    "page_numbers": [
+     2
+    ]
+   },
+   "explanation_of_variance": {
+    "value": null,
+    "citation": "",
+    "confidence": 0.8
+   },
+   "budget_vs_reforecast_pct": {
+    "value": 0.83,
+    "citation": "[Page 2] 0.83",
+    "confidence": 0.8,
+    "page_numbers": [
+     2
+    ]
+   },
+   "budget_vs_reforecast_variance": {
+    "value": 165,
+    "citation": "[Page 2] 165",
+    "confidence": 0.8,
+    "page_numbers": [
+     2
+    ]
+   },
+   "reforecast_vs_prior_budget_pct": {
+    "value": -0.81,
+    "citation": "[Page 2] -0.81",
+    "confidence": 0.8,
+    "page_numbers": [
+     2
+    ]
+   },
+   "reforecast_vs_prior_budget_variance": {
+    "value": -161,
+    "citation": "[Page 2] -161",
+    "confidence": 0.8,
+    "page_numbers": [
+     2
+    ]
+   }
+  },
+  {
+   "budget": {
+    "value": 59566,
+    "citation": "[Page 2] 59566",
+    "confidence": 0.8,
+    "page_numbers": [
+     2
+    ]
+   },
+   "gl_code": {
+    "value": "6117-0000",
+    "citation": "[Page 2] 6117-0000",
+    "confidence": 0.8,
+    "page_numbers": [
+     2
+    ]
+   },
+   "section": {
+    "value": "Other Rental Revenue",
+    "citation": "[Page 1] Other Rental Revenue",
+    "confidence": 0.75,
+    "page_numbers": [
+     1
+    ]
+   },
+   "line_item": {
+    "value": "Storage Income",
+    "citation": "[Page 2] Storage Income",
+    "confidence": 0.8,
+    "page_numbers": [
+     2
+    ]
+   },
+   "budget_year": {
+    "value": 2021,
+    "citation": "[Page 1] 2021",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_rsf": {
+    "value": 339050,
+    "citation": "[Page 1] 339050",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_name": {
+    "value": "Lakeview Tower",
+    "citation": "[Page 1] Lakeview Tower",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "prior_year_budget": {
+    "value": 61209,
+    "citation": "[Page 2] 61209",
+    "confidence": 0.8,
+    "page_numbers": [
+     2
+    ]
+   },
+   "prior_year_reforecast": {
+    "value": 59656,
+    "citation": "[Page 2] 59656",
+    "confidence": 0.8,
+    "page_numbers": [
+     2
+    ]
+   },
+   "explanation_of_variance": {
+    "value": null,
+    "citation": "",
+    "confidence": 0.8
+   },
+   "budget_vs_reforecast_pct": {
+    "value": -0.15,
+    "citation": "[Page 2] -0.15",
+    "confidence": 0.8,
+    "page_numbers": [
+     2
+    ]
+   },
+   "budget_vs_reforecast_variance": {
+    "value": -90,
+    "citation": "[Page 2] -90",
+    "confidence": 0.8,
+    "page_numbers": [
+     2
+    ]
+   },
+   "reforecast_vs_prior_budget_pct": {
+    "value": -2.54,
+    "citation": "[Page 2] -2.54",
+    "confidence": 0.8,
+    "page_numbers": [
+     2
+    ]
+   },
+   "reforecast_vs_prior_budget_variance": {
+    "value": -1553,
+    "citation": "[Page 2] -1553",
+    "confidence": 0.8,
+    "page_numbers": [
+     2
+    ]
+   }
+  },
+  {
+   "budget": {
+    "value": 0,
+    "citation": "[Page 2] 0",
+    "confidence": 0.8,
+    "page_numbers": [
+     2
+    ]
+   },
+   "gl_code": {
+    "value": "6120-0000",
+    "citation": "[Page 2] 6120-0000",
+    "confidence": 0.8,
+    "page_numbers": [
+     2
+    ]
+   },
+   "section": {
+    "value": "Other Rental Revenue",
+    "citation": "[Page 1] Other Rental Revenue",
+    "confidence": 0.75,
+    "page_numbers": [
+     1
+    ]
+   },
+   "line_item": {
+    "value": "Miscellaneous Income",
+    "citation": "[Page 2] Miscellaneous Income",
+    "confidence": 0.8,
+    "page_numbers": [
+     2
+    ]
+   },
+   "budget_year": {
+    "value": 2021,
+    "citation": "[Page 1] 2021",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_rsf": {
+    "value": 339050,
+    "citation": "[Page 1] 339050",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_name": {
+    "value": "Lakeview Tower",
+    "citation": "[Page 1] Lakeview Tower",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "prior_year_budget": {
+    "value": 0,
+    "citation": "[Page 2] 0",
+    "confidence": 0.8,
+    "page_numbers": [
+     2
+    ]
+   },
+   "prior_year_reforecast": {
+    "value": 4953,
+    "citation": "[Page 2] 4953",
+    "confidence": 0.8,
+    "page_numbers": [
+     2
+    ]
+   },
+   "explanation_of_variance": {
+    "value": "Supervisory fee income charged in 2020 on Brightpath Group's out-of-pocket tenant improvement project. This income is not projected to continue in 2021.",
+    "citation": "[Page 2] Supervisory fee income charged in 2020 on Brightpath Group's out-of-pocket tenant improvement project. This income is not projected to continue in 2021.",
+    "confidence": 0.8,
+    "page_numbers": [
+     2
+    ]
+   },
+   "budget_vs_reforecast_pct": {
+    "value": -100.0,
+    "citation": "[Page 2] -100",
+    "confidence": 0.8,
+    "page_numbers": [
+     2
+    ]
+   },
+   "budget_vs_reforecast_variance": {
+    "value": -4953,
+    "citation": "[Page 2] -4953",
+    "confidence": 0.8,
+    "page_numbers": [
+     2
+    ]
+   },
+   "reforecast_vs_prior_budget_pct": {
+    "value": null,
+    "citation": "",
+    "confidence": 0.8
+   },
+   "reforecast_vs_prior_budget_variance": {
+    "value": 4953,
+    "citation": "[Page 2] 4953",
+    "confidence": 0.8,
+    "page_numbers": [
+     2
+    ]
+   }
+  },
+  {
+   "budget": {
+    "value": 2270427,
+    "citation": "[Page 2] 2270427",
+    "confidence": 0.8,
+    "page_numbers": [
+     2
+    ]
+   },
+   "gl_code": {
+    "value": "6130-0000",
+    "citation": "[Page 2] 6130-0000",
+    "confidence": 0.8,
+    "page_numbers": [
+     2
+    ]
+   },
+   "section": {
+    "value": "Other Rental Revenue",
+    "citation": "[Page 1] Other Rental Revenue",
+    "confidence": 0.75,
+    "page_numbers": [
+     1
+    ]
+   },
+   "line_item": {
+    "value": "Operating Expense Escalation",
+    "citation": "[Page 2] Operating Expense Escalation",
+    "confidence": 0.8,
+    "page_numbers": [
+     2
+    ]
+   },
+   "budget_year": {
+    "value": 2021,
+    "citation": "[Page 1] 2021",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_rsf": {
+    "value": 339050,
+    "citation": "[Page 1] 339050",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_name": {
+    "value": "Lakeview Tower",
+    "citation": "[Page 1] Lakeview Tower",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "prior_year_budget": {
+    "value": 2432391,
+    "citation": "[Page 2] 2432391",
+    "confidence": 0.8,
+    "page_numbers": [
+     2
+    ]
+   },
+   "prior_year_reforecast": {
+    "value": 2443495,
+    "citation": "[Page 2] 2443495",
+    "confidence": 0.8,
+    "page_numbers": [
+     2
+    ]
+   },
+   "explanation_of_variance": {
+    "value": "Lower occupancy in 2021. The 2021 budget assumes a $138,000 credit back to tenants for the 2020 reconciliations.",
+    "citation": "[Page 2] Lower occupancy in 2021. The 2021 budget assumes a $138,000 credit back to tenants for the 2020 reconciliations.",
+    "confidence": 0.8,
+    "page_numbers": [
+     2
+    ]
+   },
+   "budget_vs_reforecast_pct": {
+    "value": -7.08,
+    "citation": "[Page 2] -7.08",
+    "confidence": 0.8,
+    "page_numbers": [
+     2
+    ]
+   },
+   "budget_vs_reforecast_variance": {
+    "value": -173068,
+    "citation": "[Page 2] -173068",
+    "confidence": 0.8,
+    "page_numbers": [
+     2
+    ]
+   },
+   "reforecast_vs_prior_budget_pct": {
+    "value": 0.46,
+    "citation": "[Page 2] 0.46",
+    "confidence": 0.8,
+    "page_numbers": [
+     2
+    ]
+   },
+   "reforecast_vs_prior_budget_variance": {
+    "value": 11104,
+    "citation": "[Page 2] 11104",
+    "confidence": 0.8,
+    "page_numbers": [
+     2
+    ]
+   }
+  },
+  {
+   "budget": {
+    "value": 3116718,
+    "citation": "[Page 2] 3116718",
+    "confidence": 0.8,
+    "page_numbers": [
+     2
+    ]
+   },
+   "gl_code": {
+    "value": "6131-0000",
+    "citation": "[Page 2] 6131-0000",
+    "confidence": 0.8,
+    "page_numbers": [
+     2
+    ]
+   },
+   "section": {
+    "value": "Other Rental Revenue",
+    "citation": "[Page 1] Other Rental Revenue",
+    "confidence": 0.75,
+    "page_numbers": [
+     1
+    ]
+   },
+   "line_item": {
+    "value": "Real Estate Tax Escalation",
+    "citation": "[Page 2] Real Estate Tax Escalation",
+    "confidence": 0.8,
+    "page_numbers": [
+     2
+    ]
+   },
+   "budget_year": {
+    "value": 2021,
+    "citation": "[Page 1] 2021",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_rsf": {
+    "value": 339050,
+    "citation": "[Page 1] 339050",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_name": {
+    "value": "Lakeview Tower",
+    "citation": "[Page 1] Lakeview Tower",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "prior_year_budget": {
+    "value": 3343318,
+    "citation": "[Page 2] 3343318",
+    "confidence": 0.8,
+    "page_numbers": [
+     2
+    ]
+   },
+   "prior_year_reforecast": {
+    "value": 3192093,
+    "citation": "[Page 2] 3192093",
+    "confidence": 0.8,
+    "page_numbers": [
+     2
+    ]
+   },
+   "explanation_of_variance": {
+    "value": "The 2021 budget assumes an additonal $204,000 recovered from 2020 reconciliations.",
+    "citation": "[Page 2] The 2021 budget assumes an additonal $204,000 recovered from 2020 reconciliations.",
+    "confidence": 0.8,
+    "page_numbers": [
+     2
+    ]
+   },
+   "budget_vs_reforecast_pct": {
+    "value": -2.36,
+    "citation": "[Page 2] -2.36",
+    "confidence": 0.8,
+    "page_numbers": [
+     2
+    ]
+   },
+   "budget_vs_reforecast_variance": {
+    "value": -75374,
+    "citation": "[Page 2] -75374",
+    "confidence": 0.8,
+    "page_numbers": [
+     2
+    ]
+   },
+   "reforecast_vs_prior_budget_pct": {
+    "value": -4.52,
+    "citation": "[Page 2] -4.52",
+    "confidence": 0.8,
+    "page_numbers": [
+     2
+    ]
+   },
+   "reforecast_vs_prior_budget_variance": {
+    "value": -151225,
+    "citation": "[Page 2] -151225",
+    "confidence": 0.8,
+    "page_numbers": [
+     2
+    ]
+   }
+  },
+  {
+   "budget": {
+    "value": 190114,
+    "citation": "[Page 2] 190114",
+    "confidence": 0.8,
+    "page_numbers": [
+     2
+    ]
+   },
+   "gl_code": {
+    "value": "6132-0000",
+    "citation": "[Page 2] 6132-0000",
+    "confidence": 0.8,
+    "page_numbers": [
+     2
+    ]
+   },
+   "section": {
+    "value": "Other Rental Revenue",
+    "citation": "[Page 1] Other Rental Revenue",
+    "confidence": 0.75,
+    "page_numbers": [
+     1
+    ]
+   },
+   "line_item": {
+    "value": "Antenna Income",
+    "citation": "[Page 2] Antenna Income",
+    "confidence": 0.8,
+    "page_numbers": [
+     2
+    ]
+   },
+   "budget_year": {
+    "value": 2021,
+    "citation": "[Page 1] 2021",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_rsf": {
+    "value": 339050,
+    "citation": "[Page 1] 339050",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_name": {
+    "value": "Lakeview Tower",
+    "citation": "[Page 1] Lakeview Tower",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "prior_year_budget": {
+    "value": 156686,
+    "citation": "[Page 2] 156686",
+    "confidence": 0.8,
+    "page_numbers": [
+     2
+    ]
+   },
+   "prior_year_reforecast": {
+    "value": 167970,
+    "citation": "[Page 2] 167970",
+    "confidence": 0.8,
+    "page_numbers": [
+     2
+    ]
+   },
+   "explanation_of_variance": {
+    "value": "Summit Wireless (not previously budgeted in 2020) and Harbor Trade Council impact positively both the 2020 reforcast and the 2021 budget.",
+    "citation": "[Page 2] Summit Wireless (not previously budgeted in 2020) and Harbor Trade Council impact positively both the 2020 reforcast and the 2021 budget.",
+    "confidence": 0.8,
+    "page_numbers": [
+     2
+    ]
+   },
+   "budget_vs_reforecast_pct": {
+    "value": 13.18,
+    "citation": "[Page 2] 13.18",
+    "confidence": 0.8,
+    "page_numbers": [
+     2
+    ]
+   },
+   "budget_vs_reforecast_variance": {
+    "value": 22144,
+    "citation": "[Page 2] 22144",
+    "confidence": 0.8,
+    "page_numbers": [
+     2
+    ]
+   },
+   "reforecast_vs_prior_budget_pct": {
+    "value": 7.2,
+    "citation": "[Page 2] 7.2",
+    "confidence": 0.8,
+    "page_numbers": [
+     2
+    ]
+   },
+   "reforecast_vs_prior_budget_variance": {
+    "value": 11284,
+    "citation": "[Page 2] 11284",
+    "confidence": 0.8,
+    "page_numbers": [
+     2
+    ]
+   }
+  },
+  {
+   "budget": {
+    "value": 49875,
+    "citation": "[Page 3] 49875",
+    "confidence": 0.8,
+    "page_numbers": [
+     3
+    ]
+   },
+   "gl_code": {
+    "value": "7020-0000",
+    "citation": "[Page 3] 7020-0000",
+    "confidence": 0.8,
+    "page_numbers": [
+     3
+    ]
+   },
+   "section": {
+    "value": "Cleaning Expenses",
+    "citation": "[Page 3] Cleaning Expenses",
+    "confidence": 0.8,
+    "page_numbers": [
+     3
+    ]
+   },
+   "line_item": {
+    "value": "Supplies",
+    "citation": "[Page 3] Supplies",
+    "confidence": 0.8,
+    "page_numbers": [
+     3
+    ]
+   },
+   "budget_year": {
+    "value": 2021,
+    "citation": "[Page 1] 2021",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_rsf": {
+    "value": 339050,
+    "citation": "[Page 1] 339050",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_name": {
+    "value": "Lakeview Tower",
+    "citation": "[Page 1] Lakeview Tower",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "prior_year_budget": {
+    "value": 45000,
+    "citation": "[Page 3] 45000",
+    "confidence": 0.8,
+    "page_numbers": [
+     3
+    ]
+   },
+   "prior_year_reforecast": {
+    "value": 54651,
+    "citation": "[Page 3] 54651",
+    "confidence": 0.8,
+    "page_numbers": [
+     3
+    ]
+   },
+   "explanation_of_variance": {
+    "value": "COVID 19 supplies needed in 2021. The 2021 budget assumes a gradual expense increase starting from the 2020 numbers that are much lower since the tenant population was low and then ramping up to normalized tenant population numbers. In 2020 we had one time expenses such as dispensers, signage, safety items.",
+    "citation": "[Page 3] COVID 19 supplies needed in 2021. The 2021 budget assumes a gradual expense increase starting from the 2020 numbers that are much lower since the tenant population was low and then ramping up to normalized tenant population numbers. In 2020 we had one time expenses such as dispensers, signage, safety items.",
+    "confidence": 0.8,
+    "page_numbers": [
+     3
+    ]
+   },
+   "budget_vs_reforecast_pct": {
+    "value": 8.74,
+    "citation": "[Page 3] 8.74",
+    "confidence": 0.8,
+    "page_numbers": [
+     3
+    ]
+   },
+   "budget_vs_reforecast_variance": {
+    "value": 4776,
+    "citation": "[Page 3] 4776",
+    "confidence": 0.8,
+    "page_numbers": [
+     3
+    ]
+   },
+   "reforecast_vs_prior_budget_pct": {
+    "value": -21.45,
+    "citation": "[Page 3] -21.45",
+    "confidence": 0.8,
+    "page_numbers": [
+     3
+    ]
+   },
+   "reforecast_vs_prior_budget_variance": {
+    "value": -9651,
+    "citation": "[Page 3] -9651",
+    "confidence": 0.8,
+    "page_numbers": [
+     3
+    ]
+   }
+  },
+  {
+   "budget": {
+    "value": 453784,
+    "citation": "[Page 3] 453784",
+    "confidence": 0.8,
+    "page_numbers": [
+     3
+    ]
+   },
+   "gl_code": {
+    "value": "7040-0000",
+    "citation": "[Page 3] 7040-0000",
+    "confidence": 0.8,
+    "page_numbers": [
+     3
+    ]
+   },
+   "section": {
+    "value": "Cleaning Expenses",
+    "citation": "[Page 3] Cleaning Expenses",
+    "confidence": 0.8,
+    "page_numbers": [
+     3
+    ]
+   },
+   "line_item": {
+    "value": "Service Contract",
+    "citation": "[Page 3] Service Contract",
+    "confidence": 0.8,
+    "page_numbers": [
+     3
+    ]
+   },
+   "budget_year": {
+    "value": 2021,
+    "citation": "[Page 1] 2021",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_rsf": {
+    "value": 339050,
+    "citation": "[Page 1] 339050",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_name": {
+    "value": "Lakeview Tower",
+    "citation": "[Page 1] Lakeview Tower",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "prior_year_budget": {
+    "value": 468480,
+    "citation": "[Page 3] 468480",
+    "confidence": 0.8,
+    "page_numbers": [
+     3
+    ]
+   },
+   "prior_year_reforecast": {
+    "value": 409648,
+    "citation": "[Page 3] 409648",
+    "confidence": 0.8,
+    "page_numbers": [
+     3
+    ]
+   },
+   "explanation_of_variance": {
+    "value": "Higher vacancy credit in 2020 due to lower building population caused by the pandemic. Higher costs in 2021 since special cleaning protocols are necessary to address Covid-19 and increased tenant population.",
+    "citation": "[Page 3] Higher vacancy credit in 2020 due to lower building population caused by the pandemic. Higher costs in 2021 since special cleaning protocols are necessary to address Covid-19 and increased tenant population.",
+    "confidence": 0.8,
+    "page_numbers": [
+     3
+    ]
+   },
+   "budget_vs_reforecast_pct": {
+    "value": -10.77,
+    "citation": "[Page 3] -10.77",
+    "confidence": 0.8,
+    "page_numbers": [
+     3
+    ]
+   },
+   "budget_vs_reforecast_variance": {
+    "value": -44136,
+    "citation": "[Page 3] -44136",
+    "confidence": 0.8,
+    "page_numbers": [
+     3
+    ]
+   },
+   "reforecast_vs_prior_budget_pct": {
+    "value": 12.56,
+    "citation": "[Page 3] 12.56",
+    "confidence": 0.8,
+    "page_numbers": [
+     3
+    ]
+   },
+   "reforecast_vs_prior_budget_variance": {
+    "value": 58832,
+    "citation": "[Page 3] 58832",
+    "confidence": 0.8,
+    "page_numbers": [
+     3
+    ]
+   }
+  },
+  {
+   "budget": {
+    "value": 16482,
+    "citation": "[Page 3] 16482",
+    "confidence": 0.8,
+    "page_numbers": [
+     3
+    ]
+   },
+   "gl_code": {
+    "value": "7042-0000",
+    "citation": "[Page 3] 7042-0000",
+    "confidence": 0.8,
+    "page_numbers": [
+     3
+    ]
+   },
+   "section": {
+    "value": "Cleaning Expenses",
+    "citation": "[Page 3] Cleaning Expenses",
+    "confidence": 0.8,
+    "page_numbers": [
+     3
+    ]
+   },
+   "line_item": {
+    "value": "Window Cleaning",
+    "citation": "[Page 3] Window Cleaning",
+    "confidence": 0.8,
+    "page_numbers": [
+     3
+    ]
+   },
+   "budget_year": {
+    "value": 2021,
+    "citation": "[Page 1] 2021",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_rsf": {
+    "value": 339050,
+    "citation": "[Page 1] 339050",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_name": {
+    "value": "Lakeview Tower",
+    "citation": "[Page 1] Lakeview Tower",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "prior_year_budget": {
+    "value": 15960,
+    "citation": "[Page 3] 15960",
+    "confidence": 0.8,
+    "page_numbers": [
+     3
+    ]
+   },
+   "prior_year_reforecast": {
+    "value": 11372,
+    "citation": "[Page 3] 11372",
+    "confidence": 0.8,
+    "page_numbers": [
+     3
+    ]
+   },
+   "explanation_of_variance": {
+    "value": "Anchor certification is now an annual expense. Exterior window cleaning is budgeted to take place twice/year starting in 2021.",
+    "citation": "[Page 3] Anchor certification is now an annual expense. Exterior window cleaning is budgeted to take place twice/year starting in 2021.",
+    "confidence": 0.8,
+    "page_numbers": [
+     3
+    ]
+   },
+   "budget_vs_reforecast_pct": {
+    "value": -44.93,
+    "citation": "[Page 3] -44.93",
+    "confidence": 0.8,
+    "page_numbers": [
+     3
+    ]
+   },
+   "budget_vs_reforecast_variance": {
+    "value": -5110,
+    "citation": "[Page 3] -5110",
+    "confidence": 0.8,
+    "page_numbers": [
+     3
+    ]
+   },
+   "reforecast_vs_prior_budget_pct": {
+    "value": 28.75,
+    "citation": "[Page 3] 28.75",
+    "confidence": 0.8,
+    "page_numbers": [
+     3
+    ]
+   },
+   "reforecast_vs_prior_budget_variance": {
+    "value": 4588,
+    "citation": "[Page 3] 4588",
+    "confidence": 0.8,
+    "page_numbers": [
+     3
+    ]
+   }
+  },
+  {
+   "budget": {
+    "value": 19585,
+    "citation": "[Page 3] 19585",
+    "confidence": 0.8,
+    "page_numbers": [
+     3
+    ]
+   },
+   "gl_code": {
+    "value": "7060-0000",
+    "citation": "[Page 3] 7060-0000",
+    "confidence": 0.8,
+    "page_numbers": [
+     3
+    ]
+   },
+   "section": {
+    "value": "Cleaning Expenses",
+    "citation": "[Page 3] Cleaning Expenses",
+    "confidence": 0.8,
+    "page_numbers": [
+     3
+    ]
+   },
+   "line_item": {
+    "value": "Scavenger",
+    "citation": "[Page 3] Scavenger",
+    "confidence": 0.8,
+    "page_numbers": [
+     3
+    ]
+   },
+   "budget_year": {
+    "value": 2021,
+    "citation": "[Page 1] 2021",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_rsf": {
+    "value": 339050,
+    "citation": "[Page 1] 339050",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_name": {
+    "value": "Lakeview Tower",
+    "citation": "[Page 1] Lakeview Tower",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "prior_year_budget": {
+    "value": 23660,
+    "citation": "[Page 3] 23660",
+    "confidence": 0.8,
+    "page_numbers": [
+     3
+    ]
+   },
+   "prior_year_reforecast": {
+    "value": 16284,
+    "citation": "[Page 3] 16284",
+    "confidence": 0.8,
+    "page_numbers": [
+     3
+    ]
+   },
+   "explanation_of_variance": {
+    "value": "Due to the pandemic the scavenger cost decreased significantly in 2020 (approximatelly 15% of building population). Annual costs are expected to gradually rise in 2021 as tenants return to the work place.",
+    "citation": "[Page 3] Due to the pandemic the scavenger cost decreased significantly in 2020 (approximatelly 15% of building population). Annual costs are expected to gradually rise in 2021 as tenants return to the work place.",
+    "confidence": 0.8,
+    "page_numbers": [
+     3
+    ]
+   },
+   "budget_vs_reforecast_pct": {
+    "value": -20.27,
+    "citation": "[Page 3] -20.27",
+    "confidence": 0.8,
+    "page_numbers": [
+     3
+    ]
+   },
+   "budget_vs_reforecast_variance": {
+    "value": -3301,
+    "citation": "[Page 3] -3301",
+    "confidence": 0.8,
+    "page_numbers": [
+     3
+    ]
+   },
+   "reforecast_vs_prior_budget_pct": {
+    "value": 31.17,
+    "citation": "[Page 3] 31.17",
+    "confidence": 0.8,
+    "page_numbers": [
+     3
+    ]
+   },
+   "reforecast_vs_prior_budget_variance": {
+    "value": 7376,
+    "citation": "[Page 3] 7376",
+    "confidence": 0.8,
+    "page_numbers": [
+     3
+    ]
+   }
+  },
+  {
+   "budget": {
+    "value": 487921,
+    "citation": "[Page 3] 487921",
+    "confidence": 0.8,
+    "page_numbers": [
+     3
+    ]
+   },
+   "gl_code": {
+    "value": "7230-0000",
+    "citation": "[Page 3] 7230-0000",
+    "confidence": 0.8,
+    "page_numbers": [
+     3
+    ]
+   },
+   "section": {
+    "value": "HVAC Expenses",
+    "citation": "[Page 3] HVAC Expenses",
+    "confidence": 0.8,
+    "page_numbers": [
+     3
+    ]
+   },
+   "line_item": {
+    "value": "Electricity Expense",
+    "citation": "[Page 3] Electricity Expense",
+    "confidence": 0.8,
+    "page_numbers": [
+     3
+    ]
+   },
+   "budget_year": {
+    "value": 2021,
+    "citation": "[Page 1] 2021",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_rsf": {
+    "value": 339050,
+    "citation": "[Page 1] 339050",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_name": {
+    "value": "Lakeview Tower",
+    "citation": "[Page 1] Lakeview Tower",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "prior_year_budget": {
+    "value": 485535,
+    "citation": "[Page 3] 485535",
+    "confidence": 0.8,
+    "page_numbers": [
+     3
+    ]
+   },
+   "prior_year_reforecast": {
+    "value": 486911,
+    "citation": "[Page 3] 486911",
+    "confidence": 0.8,
+    "page_numbers": [
+     3
+    ]
+   },
+   "explanation_of_variance": {
+    "value": null,
+    "citation": "",
+    "confidence": 0.8
+   },
+   "budget_vs_reforecast_pct": {
+    "value": -0.21,
+    "citation": "[Page 3] -0.21",
+    "confidence": 0.8,
+    "page_numbers": [
+     3
+    ]
+   },
+   "budget_vs_reforecast_variance": {
+    "value": -1010,
+    "citation": "[Page 3] -1010",
+    "confidence": 0.8,
+    "page_numbers": [
+     3
+    ]
+   },
+   "reforecast_vs_prior_budget_pct": {
+    "value": -0.28,
+    "citation": "[Page 3] -0.28",
+    "confidence": 0.8,
+    "page_numbers": [
+     3
+    ]
+   },
+   "reforecast_vs_prior_budget_variance": {
+    "value": -1377,
+    "citation": "[Page 3] -1377",
+    "confidence": 0.8,
+    "page_numbers": [
+     3
+    ]
+   }
+  },
+  {
+   "budget": {
+    "value": 137505,
+    "citation": "[Page 4] 137505",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "gl_code": {
+    "value": "7232-0000",
+    "citation": "[Page 4] 7232-0000",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "section": {
+    "value": "HVAC Expenses",
+    "citation": "[Page 4] HVAC Expenses",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "line_item": {
+    "value": "Gas",
+    "citation": "[Page 4] Gas",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "budget_year": {
+    "value": 2021,
+    "citation": "[Page 1] 2021",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_rsf": {
+    "value": 339050,
+    "citation": "[Page 1] 339050",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_name": {
+    "value": "Lakeview Tower",
+    "citation": "[Page 1] Lakeview Tower",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "prior_year_budget": {
+    "value": 137317,
+    "citation": "[Page 4] 137317",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "prior_year_reforecast": {
+    "value": 137099,
+    "citation": "[Page 4] 137099",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "explanation_of_variance": {
+    "value": null,
+    "citation": "",
+    "confidence": 0.8
+   },
+   "budget_vs_reforecast_pct": {
+    "value": -0.3,
+    "citation": "[Page 4] -0.3",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "budget_vs_reforecast_variance": {
+    "value": -406,
+    "citation": "[Page 4] -406",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "reforecast_vs_prior_budget_pct": {
+    "value": 0.16,
+    "citation": "[Page 4] 0.16",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "reforecast_vs_prior_budget_variance": {
+    "value": 218,
+    "citation": "[Page 4] 218",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   }
+  },
+  {
+   "budget": {
+    "value": 49413,
+    "citation": "[Page 4] 49413",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "gl_code": {
+    "value": "7236-0000",
+    "citation": "[Page 4] 7236-0000",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "section": {
+    "value": "HVAC Expenses",
+    "citation": "[Page 4] HVAC Expenses",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "line_item": {
+    "value": "Water",
+    "citation": "[Page 4] Water",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "budget_year": {
+    "value": 2021,
+    "citation": "[Page 1] 2021",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_rsf": {
+    "value": 339050,
+    "citation": "[Page 1] 339050",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_name": {
+    "value": "Lakeview Tower",
+    "citation": "[Page 1] Lakeview Tower",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "prior_year_budget": {
+    "value": 56836,
+    "citation": "[Page 4] 56836",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "prior_year_reforecast": {
+    "value": 37640,
+    "citation": "[Page 4] 37640",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "explanation_of_variance": {
+    "value": "Due to the pandemic and about 15% of tenants in the building, the water usage in 2020 was lower. Annual total cost is expected to gradually increase in 2021 as tenants return to the building.",
+    "citation": "[Page 4] Due to the pandemic and about 15% of tenants in the building, the water usage in 2020 was lower. Annual total cost is expected to gradually increase in 2021 as tenants return to the building.",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "budget_vs_reforecast_pct": {
+    "value": -31.28,
+    "citation": "[Page 4] -31.28",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "budget_vs_reforecast_variance": {
+    "value": -11773,
+    "citation": "[Page 4] -11773",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "reforecast_vs_prior_budget_pct": {
+    "value": 33.77,
+    "citation": "[Page 4] 33.77",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "reforecast_vs_prior_budget_variance": {
+    "value": 19196,
+    "citation": "[Page 4] 19196",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   }
+  },
+  {
+   "budget": {
+    "value": 65360,
+    "citation": "[Page 4] 65360",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "gl_code": {
+    "value": "7240-0000",
+    "citation": "[Page 4] 7240-0000",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "section": {
+    "value": "HVAC Expenses",
+    "citation": "[Page 4] HVAC Expenses",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "line_item": {
+    "value": "HVAC Service Contract",
+    "citation": "[Page 4] HVAC Service Contract",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "budget_year": {
+    "value": 2021,
+    "citation": "[Page 1] 2021",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_rsf": {
+    "value": 339050,
+    "citation": "[Page 1] 339050",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_name": {
+    "value": "Lakeview Tower",
+    "citation": "[Page 1] Lakeview Tower",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "prior_year_budget": {
+    "value": 69900,
+    "citation": "[Page 4] 69900",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "prior_year_reforecast": {
+    "value": 67370,
+    "citation": "[Page 4] 67370",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "explanation_of_variance": {
+    "value": null,
+    "citation": "",
+    "confidence": 0.8
+   },
+   "budget_vs_reforecast_pct": {
+    "value": 2.98,
+    "citation": "[Page 4] 2.98",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "budget_vs_reforecast_variance": {
+    "value": 2010,
+    "citation": "[Page 4] 2010",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "reforecast_vs_prior_budget_pct": {
+    "value": 3.62,
+    "citation": "[Page 4] 3.62",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "reforecast_vs_prior_budget_variance": {
+    "value": 2530,
+    "citation": "[Page 4] 2530",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   }
+  },
+  {
+   "budget": {
+    "value": 3620,
+    "citation": "[Page 4] 3620",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "gl_code": {
+    "value": "7440-0000",
+    "citation": "[Page 4] 7440-0000",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "section": {
+    "value": "Elevator Expenses",
+    "citation": "[Page 4] Elevator Expenses",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "line_item": {
+    "value": "Inspections",
+    "citation": "[Page 4] Inspections",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "budget_year": {
+    "value": 2021,
+    "citation": "[Page 1] 2021",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_rsf": {
+    "value": 339050,
+    "citation": "[Page 1] 339050",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_name": {
+    "value": "Lakeview Tower",
+    "citation": "[Page 1] Lakeview Tower",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "prior_year_budget": {
+    "value": 1120,
+    "citation": "[Page 4] 1120",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "prior_year_reforecast": {
+    "value": 1120,
+    "citation": "[Page 4] 1120",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "explanation_of_variance": {
+    "value": "High lift mandatory inspection needed in 2021 ($2500). This expense will be recurring in future years.",
+    "citation": "[Page 4] High lift mandatory inspection needed in 2021 ($2500). This expense will be recurring in future years.",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "budget_vs_reforecast_pct": {
+    "value": -223.21,
+    "citation": "[Page 4] -223.21",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "budget_vs_reforecast_variance": {
+    "value": -2500,
+    "citation": "[Page 4] -2500",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "reforecast_vs_prior_budget_pct": {
+    "value": 0.0,
+    "citation": "[Page 4] 0",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "reforecast_vs_prior_budget_variance": {
+    "value": 0,
+    "citation": "[Page 4] 0",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   }
+  },
+  {
+   "budget": {
+    "value": 63588,
+    "citation": "[Page 4] 63588",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "gl_code": {
+    "value": "7450-0000",
+    "citation": "[Page 4] 7450-0000",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "section": {
+    "value": "Elevator Expenses",
+    "citation": "[Page 4] Elevator Expenses",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "line_item": {
+    "value": "Elevator Contracts",
+    "citation": "[Page 4] Elevator Contracts",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "budget_year": {
+    "value": 2021,
+    "citation": "[Page 1] 2021",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_rsf": {
+    "value": 339050,
+    "citation": "[Page 1] 339050",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_name": {
+    "value": "Lakeview Tower",
+    "citation": "[Page 1] Lakeview Tower",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "prior_year_budget": {
+    "value": 86448,
+    "citation": "[Page 4] 86448",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "prior_year_reforecast": {
+    "value": 75536,
+    "citation": "[Page 4] 75536",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "explanation_of_variance": {
+    "value": "New contract budgeted to commence on May 1, 2020 results in lower monthly maintenance fees. Contract price is increased by 3% on anniversary date.",
+    "citation": "[Page 4] New contract budgeted to commence on May 1, 2020 results in lower monthly maintenance fees. Contract price is increased by 3% on anniversary date.",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "budget_vs_reforecast_pct": {
+    "value": 15.82,
+    "citation": "[Page 4] 15.82",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "budget_vs_reforecast_variance": {
+    "value": 11948,
+    "citation": "[Page 4] 11948",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "reforecast_vs_prior_budget_pct": {
+    "value": 12.62,
+    "citation": "[Page 4] 12.62",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "reforecast_vs_prior_budget_variance": {
+    "value": 10912,
+    "citation": "[Page 4] 10912",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   }
+  },
+  {
+   "budget": {
+    "value": 9200,
+    "citation": "[Page 4] 9200",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "gl_code": {
+    "value": "7455-0000",
+    "citation": "[Page 4] 7455-0000",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "section": {
+    "value": "Elevator Expenses",
+    "citation": "[Page 4] Elevator Expenses",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "line_item": {
+    "value": "Elevator R&M",
+    "citation": "[Page 4] Elevator R&M",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "budget_year": {
+    "value": 2021,
+    "citation": "[Page 1] 2021",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_rsf": {
+    "value": 339050,
+    "citation": "[Page 1] 339050",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_name": {
+    "value": "Lakeview Tower",
+    "citation": "[Page 1] Lakeview Tower",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "prior_year_budget": {
+    "value": 7200,
+    "citation": "[Page 4] 7200",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "prior_year_reforecast": {
+    "value": 7700,
+    "citation": "[Page 4] 7700",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "explanation_of_variance": {
+    "value": null,
+    "citation": "",
+    "confidence": 0.8
+   },
+   "budget_vs_reforecast_pct": {
+    "value": -19.48,
+    "citation": "[Page 4] -19.48",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "budget_vs_reforecast_variance": {
+    "value": -1500,
+    "citation": "[Page 4] -1500",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "reforecast_vs_prior_budget_pct": {
+    "value": -6.94,
+    "citation": "[Page 4] -6.94",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "reforecast_vs_prior_budget_variance": {
+    "value": -500,
+    "citation": "[Page 4] -500",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   }
+  },
+  {
+   "budget": {
+    "value": 35824,
+    "citation": "[Page 4] 35824",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "gl_code": {
+    "value": "7530-0000",
+    "citation": "[Page 4] 7530-0000",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "section": {
+    "value": "Landscaping Expenses",
+    "citation": "[Page 4] Landscaping Expenses",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "line_item": {
+    "value": "Landscaping",
+    "citation": "[Page 4] Landscaping",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "budget_year": {
+    "value": 2021,
+    "citation": "[Page 1] 2021",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_rsf": {
+    "value": 339050,
+    "citation": "[Page 1] 339050",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_name": {
+    "value": "Lakeview Tower",
+    "citation": "[Page 1] Lakeview Tower",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "prior_year_budget": {
+    "value": 35024,
+    "citation": "[Page 4] 35024",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "prior_year_reforecast": {
+    "value": 35558,
+    "citation": "[Page 4] 35558",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "explanation_of_variance": {
+    "value": null,
+    "citation": "",
+    "confidence": 0.8
+   },
+   "budget_vs_reforecast_pct": {
+    "value": -0.75,
+    "citation": "[Page 4] -0.75",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "budget_vs_reforecast_variance": {
+    "value": -266,
+    "citation": "[Page 4] -266",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "reforecast_vs_prior_budget_pct": {
+    "value": -1.52,
+    "citation": "[Page 4] -1.52",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "reforecast_vs_prior_budget_variance": {
+    "value": -534,
+    "citation": "[Page 4] -534",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   }
+  },
+  {
+   "budget": {
+    "value": 29982,
+    "citation": "[Page 4] 29982",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "gl_code": {
+    "value": "7531-0000",
+    "citation": "[Page 4] 7531-0000",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "section": {
+    "value": "Landscaping Expenses",
+    "citation": "[Page 4] Landscaping Expenses",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "line_item": {
+    "value": "Snow Removal",
+    "citation": "[Page 4] Snow Removal",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "budget_year": {
+    "value": 2021,
+    "citation": "[Page 1] 2021",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_rsf": {
+    "value": 339050,
+    "citation": "[Page 1] 339050",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_name": {
+    "value": "Lakeview Tower",
+    "citation": "[Page 1] Lakeview Tower",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "prior_year_budget": {
+    "value": 29350,
+    "citation": "[Page 4] 29350",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "prior_year_reforecast": {
+    "value": 29593,
+    "citation": "[Page 4] 29593",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "explanation_of_variance": {
+    "value": null,
+    "citation": "",
+    "confidence": 0.8
+   },
+   "budget_vs_reforecast_pct": {
+    "value": -1.31,
+    "citation": "[Page 4] -1.31",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "budget_vs_reforecast_variance": {
+    "value": -389,
+    "citation": "[Page 4] -389",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "reforecast_vs_prior_budget_pct": {
+    "value": -0.83,
+    "citation": "[Page 4] -0.83",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "reforecast_vs_prior_budget_variance": {
+    "value": -243,
+    "citation": "[Page 4] -243",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   }
+  },
+  {
+   "budget": {
+    "value": 490824,
+    "citation": "[Page 4] 490824",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "gl_code": {
+    "value": "7610-0000",
+    "citation": "[Page 4] 7610-0000",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "section": {
+    "value": "General Building Expenses",
+    "citation": "[Page 4] General Building Expenses",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "line_item": {
+    "value": "General Bldg Payroll",
+    "citation": "[Page 4] General Bldg Payroll",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "budget_year": {
+    "value": 2021,
+    "citation": "[Page 1] 2021",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_rsf": {
+    "value": 339050,
+    "citation": "[Page 1] 339050",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_name": {
+    "value": "Lakeview Tower",
+    "citation": "[Page 1] Lakeview Tower",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "prior_year_budget": {
+    "value": 485495,
+    "citation": "[Page 4] 485495",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "prior_year_reforecast": {
+    "value": 470152,
+    "citation": "[Page 4] 470152",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "explanation_of_variance": {
+    "value": null,
+    "citation": "",
+    "confidence": 0.8
+   },
+   "budget_vs_reforecast_pct": {
+    "value": -4.4,
+    "citation": "[Page 4] -4.4",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "budget_vs_reforecast_variance": {
+    "value": -20672,
+    "citation": "[Page 4] -20672",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "reforecast_vs_prior_budget_pct": {
+    "value": 3.16,
+    "citation": "[Page 4] 3.16",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   },
+   "reforecast_vs_prior_budget_variance": {
+    "value": 15343,
+    "citation": "[Page 4] 15343",
+    "confidence": 0.8,
+    "page_numbers": [
+     4
+    ]
+   }
+  },
+  {
+   "budget": {
+    "value": 45200,
+    "citation": "[Page 5] 45200",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   },
+   "gl_code": {
+    "value": "7620-0000",
+    "citation": "[Page 5] 7620-0000",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   },
+   "section": {
+    "value": "General Building Expenses",
+    "citation": "[Page 4] General Building Expenses",
+    "confidence": 0.75,
+    "page_numbers": [
+     4
+    ]
+   },
+   "line_item": {
+    "value": "Supplies",
+    "citation": "[Page 5] Supplies",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   },
+   "budget_year": {
+    "value": 2021,
+    "citation": "[Page 1] 2021",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_rsf": {
+    "value": 339050,
+    "citation": "[Page 1] 339050",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_name": {
+    "value": "Lakeview Tower",
+    "citation": "[Page 1] Lakeview Tower",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "prior_year_budget": {
+    "value": 34400,
+    "citation": "[Page 5] 34400",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   },
+   "prior_year_reforecast": {
+    "value": 45194,
+    "citation": "[Page 5] 45194",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   },
+   "explanation_of_variance": {
+    "value": "Plumbing, lights, HVAC supplies needed for frequent replacements due to the age of the existing equipment. Purchase gantry for $5,000 in 2021.",
+    "citation": "[Page 5] Plumbing, lights, HVAC supplies needed for frequent replacements due to the age of the existing equipment. Purchase gantry for $5,000 in 2021.",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   },
+   "budget_vs_reforecast_pct": {
+    "value": -0.01,
+    "citation": "[Page 5] -0.01",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   },
+   "budget_vs_reforecast_variance": {
+    "value": -6,
+    "citation": "[Page 5] -6",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   },
+   "reforecast_vs_prior_budget_pct": {
+    "value": -31.38,
+    "citation": "[Page 5] -31.38",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   },
+   "reforecast_vs_prior_budget_variance": {
+    "value": -10794,
+    "citation": "[Page 5] -10794",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   }
+  },
+  {
+   "budget": {
+    "value": 3600,
+    "citation": "[Page 5] 3600",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   },
+   "gl_code": {
+    "value": "7625-0000",
+    "citation": "[Page 5] 7625-0000",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   },
+   "section": {
+    "value": "General Building Expenses",
+    "citation": "[Page 4] General Building Expenses",
+    "confidence": 0.75,
+    "page_numbers": [
+     4
+    ]
+   },
+   "line_item": {
+    "value": "Uniforms",
+    "citation": "[Page 5] Uniforms",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   },
+   "budget_year": {
+    "value": 2021,
+    "citation": "[Page 1] 2021",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_rsf": {
+    "value": 339050,
+    "citation": "[Page 1] 339050",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_name": {
+    "value": "Lakeview Tower",
+    "citation": "[Page 1] Lakeview Tower",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "prior_year_budget": {
+    "value": 3300,
+    "citation": "[Page 5] 3300",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   },
+   "prior_year_reforecast": {
+    "value": 3422,
+    "citation": "[Page 5] 3422",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   },
+   "explanation_of_variance": {
+    "value": null,
+    "citation": "",
+    "confidence": 0.8
+   },
+   "budget_vs_reforecast_pct": {
+    "value": -5.2,
+    "citation": "[Page 5] -5.2",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   },
+   "budget_vs_reforecast_variance": {
+    "value": -178,
+    "citation": "[Page 5] -178",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   },
+   "reforecast_vs_prior_budget_pct": {
+    "value": -3.7,
+    "citation": "[Page 5] -3.7",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   },
+   "reforecast_vs_prior_budget_variance": {
+    "value": -122,
+    "citation": "[Page 5] -122",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   }
+  },
+  {
+   "budget": {
+    "value": 284752,
+    "citation": "[Page 5] 284752",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   },
+   "gl_code": {
+    "value": "7640-0000",
+    "citation": "[Page 5] 7640-0000",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   },
+   "section": {
+    "value": "General Building Expenses",
+    "citation": "[Page 4] General Building Expenses",
+    "confidence": 0.75,
+    "page_numbers": [
+     4
+    ]
+   },
+   "line_item": {
+    "value": "Security",
+    "citation": "[Page 5] Security",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   },
+   "budget_year": {
+    "value": 2021,
+    "citation": "[Page 1] 2021",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_rsf": {
+    "value": 339050,
+    "citation": "[Page 1] 339050",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_name": {
+    "value": "Lakeview Tower",
+    "citation": "[Page 1] Lakeview Tower",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "prior_year_budget": {
+    "value": 268762,
+    "citation": "[Page 5] 268762",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   },
+   "prior_year_reforecast": {
+    "value": 255584,
+    "citation": "[Page 5] 255584",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   },
+   "explanation_of_variance": {
+    "value": null,
+    "citation": "",
+    "confidence": 0.8
+   },
+   "budget_vs_reforecast_pct": {
+    "value": -11.41,
+    "citation": "[Page 5] -11.41",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   },
+   "budget_vs_reforecast_variance": {
+    "value": -29169,
+    "citation": "[Page 5] -29169",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   },
+   "reforecast_vs_prior_budget_pct": {
+    "value": 4.9,
+    "citation": "[Page 5] 4.9",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   },
+   "reforecast_vs_prior_budget_variance": {
+    "value": 13178,
+    "citation": "[Page 5] 13178",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   }
+  },
+  {
+   "budget": {
+    "value": 60310,
+    "citation": "[Page 5] 60310",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   },
+   "gl_code": {
+    "value": "7641-0000",
+    "citation": "[Page 5] 7641-0000",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   },
+   "section": {
+    "value": "General Building Expenses",
+    "citation": "[Page 4] General Building Expenses",
+    "confidence": 0.75,
+    "page_numbers": [
+     4
+    ]
+   },
+   "line_item": {
+    "value": "Fire and Life Safety",
+    "citation": "[Page 5] Fire and Life Safety",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   },
+   "budget_year": {
+    "value": 2021,
+    "citation": "[Page 1] 2021",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_rsf": {
+    "value": 339050,
+    "citation": "[Page 1] 339050",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_name": {
+    "value": "Lakeview Tower",
+    "citation": "[Page 1] Lakeview Tower",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "prior_year_budget": {
+    "value": 40940,
+    "citation": "[Page 5] 40940",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   },
+   "prior_year_reforecast": {
+    "value": 105906,
+    "citation": "[Page 5] 105906",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   },
+   "explanation_of_variance": {
+    "value": "Variance between 2020 budget and 2021 budget is caused by the following expenses: virtual fire drill, Datawatch monthly monitoring, radio and camera replacement. In the 2020 reforcast the numbers are high due to the one-time Datawatch installation that involved converting the video system to a digital platform, electrical work needed for the new system to become operational, installation of a gate in stairwell #2 and Otis cost to integrate the system. Ownership also approved the installation of the no-touch phase 1 system of Datawatch that involved Otis cost (labor and boards) and Datawatch expense.",
+    "citation": "[Page 5] Variance between 2020 budget and 2021 budget is caused by the following expenses: virtual fire drill, Datawatch monthly monitoring, radio and camera replacement. In the 2020 reforcast the numbers are high due to the one-time Datawatch installation that involved converting the video system to a digital platform, electrical work needed for the new system to become operational, installation of a gate in stairwell #2 and Otis cost to integrate the system. Ownership also approved the installation of the no-touch phase 1 system of Datawatch that involved Otis cost (labor and boards) and Datawatch expense.",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   },
+   "budget_vs_reforecast_pct": {
+    "value": 43.05,
+    "citation": "[Page 5] 43.05",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   },
+   "budget_vs_reforecast_variance": {
+    "value": 45596,
+    "citation": "[Page 5] 45596",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   },
+   "reforecast_vs_prior_budget_pct": {
+    "value": -158.69,
+    "citation": "[Page 5] -158.69",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   },
+   "reforecast_vs_prior_budget_variance": {
+    "value": -64966,
+    "citation": "[Page 5] -64966",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   }
+  },
+  {
+   "budget": {
+    "value": 5000,
+    "citation": "[Page 5] 5000",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   },
+   "gl_code": {
+    "value": "7644-0000",
+    "citation": "[Page 5] 7644-0000",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   },
+   "section": {
+    "value": "General Building Expenses",
+    "citation": "[Page 4] General Building Expenses",
+    "confidence": 0.75,
+    "page_numbers": [
+     4
+    ]
+   },
+   "line_item": {
+    "value": "Painting and Decorating",
+    "citation": "[Page 5] Painting and Decorating",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   },
+   "budget_year": {
+    "value": 2021,
+    "citation": "[Page 1] 2021",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_rsf": {
+    "value": 339050,
+    "citation": "[Page 1] 339050",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_name": {
+    "value": "Lakeview Tower",
+    "citation": "[Page 1] Lakeview Tower",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "prior_year_budget": {
+    "value": 5000,
+    "citation": "[Page 5] 5000",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   },
+   "prior_year_reforecast": {
+    "value": 7790,
+    "citation": "[Page 5] 7790",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   },
+   "explanation_of_variance": {
+    "value": null,
+    "citation": "",
+    "confidence": 0.8
+   },
+   "budget_vs_reforecast_pct": {
+    "value": 35.82,
+    "citation": "[Page 5] 35.82",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   },
+   "budget_vs_reforecast_variance": {
+    "value": 2790,
+    "citation": "[Page 5] 2790",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   },
+   "reforecast_vs_prior_budget_pct": {
+    "value": -55.8,
+    "citation": "[Page 5] -55.8",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   },
+   "reforecast_vs_prior_budget_variance": {
+    "value": -2790,
+    "citation": "[Page 5] -2790",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   }
+  },
+  {
+   "budget": {
+    "value": 4694,
+    "citation": "[Page 5] 4694",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   },
+   "gl_code": {
+    "value": "7645-0000",
+    "citation": "[Page 5] 7645-0000",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   },
+   "section": {
+    "value": "General Building Expenses",
+    "citation": "[Page 4] General Building Expenses",
+    "confidence": 0.75,
+    "page_numbers": [
+     4
+    ]
+   },
+   "line_item": {
+    "value": "Exterminating",
+    "citation": "[Page 5] Exterminating",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   },
+   "budget_year": {
+    "value": 2021,
+    "citation": "[Page 1] 2021",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_rsf": {
+    "value": 339050,
+    "citation": "[Page 1] 339050",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_name": {
+    "value": "Lakeview Tower",
+    "citation": "[Page 1] Lakeview Tower",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "prior_year_budget": {
+    "value": 4200,
+    "citation": "[Page 5] 4200",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   },
+   "prior_year_reforecast": {
+    "value": 2682,
+    "citation": "[Page 5] 2682",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   },
+   "explanation_of_variance": {
+    "value": "Increased rodent control and roof top spider control.",
+    "citation": "[Page 5] Increased rodent control and roof top spider control.",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   },
+   "budget_vs_reforecast_pct": {
+    "value": -75.02,
+    "citation": "[Page 5] -75.02",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   },
+   "budget_vs_reforecast_variance": {
+    "value": -2012,
+    "citation": "[Page 5] -2012",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   },
+   "reforecast_vs_prior_budget_pct": {
+    "value": 36.14,
+    "citation": "[Page 5] 36.14",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   },
+   "reforecast_vs_prior_budget_variance": {
+    "value": 1518,
+    "citation": "[Page 5] 1518",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   }
+  },
+  {
+   "budget": {
+    "value": 20224,
+    "citation": "[Page 5] 20224",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   },
+   "gl_code": {
+    "value": "7646-0000",
+    "citation": "[Page 5] 7646-0000",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   },
+   "section": {
+    "value": "General Building Expenses",
+    "citation": "[Page 4] General Building Expenses",
+    "confidence": 0.75,
+    "page_numbers": [
+     4
+    ]
+   },
+   "line_item": {
+    "value": "Metal Maintenance",
+    "citation": "[Page 5] Metal Maintenance",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   },
+   "budget_year": {
+    "value": 2021,
+    "citation": "[Page 1] 2021",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_rsf": {
+    "value": 339050,
+    "citation": "[Page 1] 339050",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_name": {
+    "value": "Lakeview Tower",
+    "citation": "[Page 1] Lakeview Tower",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "prior_year_budget": {
+    "value": 20724,
+    "citation": "[Page 5] 20724",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   },
+   "prior_year_reforecast": {
+    "value": 20167,
+    "citation": "[Page 5] 20167",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   },
+   "explanation_of_variance": {
+    "value": null,
+    "citation": "",
+    "confidence": 0.8
+   },
+   "budget_vs_reforecast_pct": {
+    "value": -0.28,
+    "citation": "[Page 5] -0.28",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   },
+   "budget_vs_reforecast_variance": {
+    "value": -57,
+    "citation": "[Page 5] -57",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   },
+   "reforecast_vs_prior_budget_pct": {
+    "value": 2.69,
+    "citation": "[Page 5] 2.69",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   },
+   "reforecast_vs_prior_budget_variance": {
+    "value": 557,
+    "citation": "[Page 5] 557",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   }
+  },
+  {
+   "budget": {
+    "value": 5400,
+    "citation": "[Page 5] 5400",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   },
+   "gl_code": {
+    "value": "7647-0000",
+    "citation": "[Page 5] 7647-0000",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   },
+   "section": {
+    "value": "General Building Expenses",
+    "citation": "[Page 4] General Building Expenses",
+    "confidence": 0.75,
+    "page_numbers": [
+     4
+    ]
+   },
+   "line_item": {
+    "value": "Interior Plants",
+    "citation": "[Page 5] Interior Plants",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   },
+   "budget_year": {
+    "value": 2021,
+    "citation": "[Page 1] 2021",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_rsf": {
+    "value": 339050,
+    "citation": "[Page 1] 339050",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_name": {
+    "value": "Lakeview Tower",
+    "citation": "[Page 1] Lakeview Tower",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "prior_year_budget": {
+    "value": 5100,
+    "citation": "[Page 5] 5100",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   },
+   "prior_year_reforecast": {
+    "value": 4576,
+    "citation": "[Page 5] 4576",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   },
+   "explanation_of_variance": {
+    "value": null,
+    "citation": "",
+    "confidence": 0.8
+   },
+   "budget_vs_reforecast_pct": {
+    "value": -18.01,
+    "citation": "[Page 5] -18.01",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   },
+   "budget_vs_reforecast_variance": {
+    "value": -824,
+    "citation": "[Page 5] -824",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   },
+   "reforecast_vs_prior_budget_pct": {
+    "value": 10.27,
+    "citation": "[Page 5] 10.27",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   },
+   "reforecast_vs_prior_budget_variance": {
+    "value": 524,
+    "citation": "[Page 5] 524",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   }
+  },
+  {
+   "budget": {
+    "value": 8500,
+    "citation": "[Page 5] 8500",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   },
+   "gl_code": {
+    "value": "7648-0000",
+    "citation": "[Page 5] 7648-0000",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   },
+   "section": {
+    "value": "General Building Expenses",
+    "citation": "[Page 4] General Building Expenses",
+    "confidence": 0.75,
+    "page_numbers": [
+     4
+    ]
+   },
+   "line_item": {
+    "value": "Electrical Maintenance",
+    "citation": "[Page 5] Electrical Maintenance",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   },
+   "budget_year": {
+    "value": 2021,
+    "citation": "[Page 1] 2021",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_rsf": {
+    "value": 339050,
+    "citation": "[Page 1] 339050",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_name": {
+    "value": "Lakeview Tower",
+    "citation": "[Page 1] Lakeview Tower",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "prior_year_budget": {
+    "value": 9500,
+    "citation": "[Page 5] 9500",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   },
+   "prior_year_reforecast": {
+    "value": 9100,
+    "citation": "[Page 5] 9100",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   },
+   "explanation_of_variance": {
+    "value": null,
+    "citation": "",
+    "confidence": 0.8
+   },
+   "budget_vs_reforecast_pct": {
+    "value": 6.59,
+    "citation": "[Page 5] 6.59",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   },
+   "budget_vs_reforecast_variance": {
+    "value": 600,
+    "citation": "[Page 5] 600",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   },
+   "reforecast_vs_prior_budget_pct": {
+    "value": 4.21,
+    "citation": "[Page 5] 4.21",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   },
+   "reforecast_vs_prior_budget_variance": {
+    "value": 400,
+    "citation": "[Page 5] 400",
+    "confidence": 0.8,
+    "page_numbers": [
+     5
+    ]
+   }
+  },
+  {
+   "budget": {
+    "value": 127500,
+    "citation": "[Page 6] 127500",
+    "confidence": 0.8,
+    "page_numbers": [
+     6
+    ]
+   },
+   "gl_code": {
+    "value": "7650-0000",
+    "citation": "[Page 6] 7650-0000",
+    "confidence": 0.8,
+    "page_numbers": [
+     6
+    ]
+   },
+   "section": {
+    "value": "General Building Expenses",
+    "citation": "[Page 4] General Building Expenses",
+    "confidence": 0.75,
+    "page_numbers": [
+     4
+    ]
+   },
+   "line_item": {
+    "value": "Repairs and Maintenance",
+    "citation": "[Page 6] Repairs and Maintenance",
+    "confidence": 0.8,
+    "page_numbers": [
+     6
+    ]
+   },
+   "budget_year": {
+    "value": 2021,
+    "citation": "[Page 1] 2021",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_rsf": {
+    "value": 339050,
+    "citation": "[Page 1] 339050",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_name": {
+    "value": "Lakeview Tower",
+    "citation": "[Page 1] Lakeview Tower",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "prior_year_budget": {
+    "value": 59000,
+    "citation": "[Page 6] 59000",
+    "confidence": 0.8,
+    "page_numbers": [
+     6
+    ]
+   },
+   "prior_year_reforecast": {
+    "value": 147041,
+    "citation": "[Page 6] 147041",
+    "confidence": 0.8,
+    "page_numbers": [
+     6
+    ]
+   },
+   "explanation_of_variance": {
+    "value": "The 2020 refocast number has $75k to replace the lobby pipe, $40k for boiler #4 repair and $7500 for Wellnest building certification. These are costs that were not budgeted. In 2021 the budget assumes masonery and dampers replacement at $25k each project, Elara master plan $12,500 and $35k for basement clean up from leaks (make safe) in addition to other recurring expenses.",
+    "citation": "[Page 6] The 2020 refocast number has $75k to replace the lobby pipe, $40k for boiler #4 repair and $7500 for Wellnest building certification. These are costs that were not budgeted. In 2021 the budget assumes masonery and dampers replacement at $25k each project, Elara master plan $12,500 and $35k for basement clean up from leaks (make safe) in addition to other recurring expenses.",
+    "confidence": 0.8,
+    "page_numbers": [
+     6
+    ]
+   },
+   "budget_vs_reforecast_pct": {
+    "value": 13.29,
+    "citation": "[Page 6] 13.29",
+    "confidence": 0.8,
+    "page_numbers": [
+     6
+    ]
+   },
+   "budget_vs_reforecast_variance": {
+    "value": 19541,
+    "citation": "[Page 6] 19541",
+    "confidence": 0.8,
+    "page_numbers": [
+     6
+    ]
+   },
+   "reforecast_vs_prior_budget_pct": {
+    "value": -149.22,
+    "citation": "[Page 6] -149.22",
+    "confidence": 0.8,
+    "page_numbers": [
+     6
+    ]
+   },
+   "reforecast_vs_prior_budget_variance": {
+    "value": -88041,
+    "citation": "[Page 6] -88041",
+    "confidence": 0.8,
+    "page_numbers": [
+     6
+    ]
+   }
+  },
+  {
+   "budget": {
+    "value": 25000,
+    "citation": "[Page 6] 25000",
+    "confidence": 0.8,
+    "page_numbers": [
+     6
+    ]
+   },
+   "gl_code": {
+    "value": "7651-0000",
+    "citation": "[Page 6] 7651-0000",
+    "confidence": 0.8,
+    "page_numbers": [
+     6
+    ]
+   },
+   "section": {
+    "value": "General Building Expenses",
+    "citation": "[Page 4] General Building Expenses",
+    "confidence": 0.75,
+    "page_numbers": [
+     4
+    ]
+   },
+   "line_item": {
+    "value": "Plumbing",
+    "citation": "[Page 6] Plumbing",
+    "confidence": 0.8,
+    "page_numbers": [
+     6
+    ]
+   },
+   "budget_year": {
+    "value": 2021,
+    "citation": "[Page 1] 2021",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_rsf": {
+    "value": 339050,
+    "citation": "[Page 1] 339050",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_name": {
+    "value": "Lakeview Tower",
+    "citation": "[Page 1] Lakeview Tower",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "prior_year_budget": {
+    "value": 51000,
+    "citation": "[Page 6] 51000",
+    "confidence": 0.8,
+    "page_numbers": [
+     6
+    ]
+   },
+   "prior_year_reforecast": {
+    "value": 27068,
+    "citation": "[Page 6] 27068",
+    "confidence": 0.8,
+    "page_numbers": [
+     6
+    ]
+   },
+   "explanation_of_variance": {
+    "value": "The 2020 reforcast is lower since we are not projecting to spend the $25k to replace the 2nd domestic water pump in 2020. The replacement of #2 and #3 pumps is recommended to be done together in 2022 as a capital cost.",
+    "citation": "[Page 6] The 2020 reforcast is lower since we are not projecting to spend the $25k to replace the 2nd domestic water pump in 2020. The replacement of #2 and #3 pumps is recommended to be done together in 2022 as a capital cost.",
+    "confidence": 0.8,
+    "page_numbers": [
+     6
+    ]
+   },
+   "budget_vs_reforecast_pct": {
+    "value": 7.64,
+    "citation": "[Page 6] 7.64",
+    "confidence": 0.8,
+    "page_numbers": [
+     6
+    ]
+   },
+   "budget_vs_reforecast_variance": {
+    "value": 2068,
+    "citation": "[Page 6] 2068",
+    "confidence": 0.8,
+    "page_numbers": [
+     6
+    ]
+   },
+   "reforecast_vs_prior_budget_pct": {
+    "value": 46.93,
+    "citation": "[Page 6] 46.93",
+    "confidence": 0.8,
+    "page_numbers": [
+     6
+    ]
+   },
+   "reforecast_vs_prior_budget_variance": {
+    "value": 23932,
+    "citation": "[Page 6] 23932",
+    "confidence": 0.8,
+    "page_numbers": [
+     6
+    ]
+   }
+  },
+  {
+   "budget": {
+    "value": 3732,
+    "citation": "[Page 6] 3732",
+    "confidence": 0.8,
+    "page_numbers": [
+     6
+    ]
+   },
+   "gl_code": {
+    "value": "7652-0000",
+    "citation": "[Page 6] 7652-0000",
+    "confidence": 0.8,
+    "page_numbers": [
+     6
+    ]
+   },
+   "section": {
+    "value": "General Building Expenses",
+    "citation": "[Page 4] General Building Expenses",
+    "confidence": 0.75,
+    "page_numbers": [
+     4
+    ]
+   },
+   "line_item": {
+    "value": "RM Roof",
+    "citation": "[Page 6] RM Roof",
+    "confidence": 0.8,
+    "page_numbers": [
+     6
+    ]
+   },
+   "budget_year": {
+    "value": 2021,
+    "citation": "[Page 1] 2021",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_rsf": {
+    "value": 339050,
+    "citation": "[Page 1] 339050",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_name": {
+    "value": "Lakeview Tower",
+    "citation": "[Page 1] Lakeview Tower",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "prior_year_budget": {
+    "value": 3700,
+    "citation": "[Page 6] 3700",
+    "confidence": 0.8,
+    "page_numbers": [
+     6
+    ]
+   },
+   "prior_year_reforecast": {
+    "value": 4120,
+    "citation": "[Page 6] 4120",
+    "confidence": 0.8,
+    "page_numbers": [
+     6
+    ]
+   },
+   "explanation_of_variance": {
+    "value": "A roof consultant fee is budgeted in 2021 to assess the condition of the roofs and estimated remaining useful life.",
+    "citation": "[Page 6] A roof consultant fee is budgeted in 2021 to assess the condition of the roofs and estimated remaining useful life.",
+    "confidence": 0.8,
+    "page_numbers": [
+     6
+    ]
+   },
+   "budget_vs_reforecast_pct": {
+    "value": 9.42,
+    "citation": "[Page 6] 9.42",
+    "confidence": 0.8,
+    "page_numbers": [
+     6
+    ]
+   },
+   "budget_vs_reforecast_variance": {
+    "value": 388,
+    "citation": "[Page 6] 388",
+    "confidence": 0.8,
+    "page_numbers": [
+     6
+    ]
+   },
+   "reforecast_vs_prior_budget_pct": {
+    "value": -11.35,
+    "citation": "[Page 6] -11.35",
+    "confidence": 0.8,
+    "page_numbers": [
+     6
+    ]
+   },
+   "reforecast_vs_prior_budget_variance": {
+    "value": -420,
+    "citation": "[Page 6] -420",
+    "confidence": 0.8,
+    "page_numbers": [
+     6
+    ]
+   }
+  },
+  {
+   "budget": {
+    "value": 30600,
+    "citation": "[Page 6] 30600",
+    "confidence": 0.8,
+    "page_numbers": [
+     6
+    ]
+   },
+   "gl_code": {
+    "value": "7660-0000",
+    "citation": "[Page 6] 7660-0000",
+    "confidence": 0.8,
+    "page_numbers": [
+     6
+    ]
+   },
+   "section": {
+    "value": "General Building Expenses",
+    "citation": "[Page 4] General Building Expenses",
+    "confidence": 0.75,
+    "page_numbers": [
+     4
+    ]
+   },
+   "line_item": {
+    "value": "Tenant Services",
+    "citation": "[Page 6] Tenant Services",
+    "confidence": 0.8,
+    "page_numbers": [
+     6
+    ]
+   },
+   "budget_year": {
+    "value": 2021,
+    "citation": "[Page 1] 2021",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_rsf": {
+    "value": 339050,
+    "citation": "[Page 1] 339050",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_name": {
+    "value": "Lakeview Tower",
+    "citation": "[Page 1] Lakeview Tower",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "prior_year_budget": {
+    "value": 40000,
+    "citation": "[Page 6] 40000",
+    "confidence": 0.8,
+    "page_numbers": [
+     6
+    ]
+   },
+   "prior_year_reforecast": {
+    "value": 29072,
+    "citation": "[Page 6] 29072",
+    "confidence": 0.8,
+    "page_numbers": [
+     6
+    ]
+   },
+   "explanation_of_variance": {
+    "value": "Due to the pandemic the 2020 reforcast shows lower tenant services requests. These numbers are expected to rise in 2021 with building population returning to the workplace.",
+    "citation": "[Page 6] Due to the pandemic the 2020 reforcast shows lower tenant services requests. These numbers are expected to rise in 2021 with building population returning to the workplace.",
+    "confidence": 0.8,
+    "page_numbers": [
+     6
+    ]
+   },
+   "budget_vs_reforecast_pct": {
+    "value": -5.26,
+    "citation": "[Page 6] -5.26",
+    "confidence": 0.8,
+    "page_numbers": [
+     6
+    ]
+   },
+   "budget_vs_reforecast_variance": {
+    "value": -1528,
+    "citation": "[Page 6] -1528",
+    "confidence": 0.8,
+    "page_numbers": [
+     6
+    ]
+   },
+   "reforecast_vs_prior_budget_pct": {
+    "value": 27.32,
+    "citation": "[Page 6] 27.32",
+    "confidence": 0.8,
+    "page_numbers": [
+     6
+    ]
+   },
+   "reforecast_vs_prior_budget_variance": {
+    "value": 10928,
+    "citation": "[Page 6] 10928",
+    "confidence": 0.8,
+    "page_numbers": [
+     6
+    ]
+   }
+  },
+  {
+   "budget": {
+    "value": 2000,
+    "citation": "[Page 6] 2000",
+    "confidence": 0.8,
+    "page_numbers": [
+     6
+    ]
+   },
+   "gl_code": {
+    "value": "7670-0000",
+    "citation": "[Page 6] 7670-0000",
+    "confidence": 0.8,
+    "page_numbers": [
+     6
+    ]
+   },
+   "section": {
+    "value": "General Building Expenses",
+    "citation": "[Page 4] General Building Expenses",
+    "confidence": 0.75,
+    "page_numbers": [
+     4
+    ]
+   },
+   "line_item": {
+    "value": "Building Directory/Signs",
+    "citation": "[Page 6] Building Directory/Signs",
+    "confidence": 0.8,
+    "page_numbers": [
+     6
+    ]
+   },
+   "budget_year": {
+    "value": 2021,
+    "citation": "[Page 1] 2021",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_rsf": {
+    "value": 339050,
+    "citation": "[Page 1] 339050",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_name": {
+    "value": "Lakeview Tower",
+    "citation": "[Page 1] Lakeview Tower",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "prior_year_budget": {
+    "value": 2000,
+    "citation": "[Page 6] 2000",
+    "confidence": 0.8,
+    "page_numbers": [
+     6
+    ]
+   },
+   "prior_year_reforecast": {
+    "value": 2461,
+    "citation": "[Page 6] 2461",
+    "confidence": 0.8,
+    "page_numbers": [
+     6
+    ]
+   },
+   "explanation_of_variance": {
+    "value": null,
+    "citation": "",
+    "confidence": 0.8
+   },
+   "budget_vs_reforecast_pct": {
+    "value": 18.73,
+    "citation": "[Page 6] 18.73",
+    "confidence": 0.8,
+    "page_numbers": [
+     6
+    ]
+   },
+   "budget_vs_reforecast_variance": {
+    "value": 461,
+    "citation": "[Page 6] 461",
+    "confidence": 0.8,
+    "page_numbers": [
+     6
+    ]
+   },
+   "reforecast_vs_prior_budget_pct": {
+    "value": -23.05,
+    "citation": "[Page 6] -23.05",
+    "confidence": 0.8,
+    "page_numbers": [
+     6
+    ]
+   },
+   "reforecast_vs_prior_budget_variance": {
+    "value": -461,
+    "citation": "[Page 6] -461",
+    "confidence": 0.8,
+    "page_numbers": [
+     6
+    ]
+   }
+  },
+  {
+   "budget": {
+    "value": 213185,
+    "citation": "[Page 7] 213185",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "gl_code": {
+    "value": "7810-0000",
+    "citation": "[Page 7] 7810-0000",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "section": {
+    "value": "General & Administrative",
+    "citation": "[Page 7] General & Administrative",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "line_item": {
+    "value": "Payroll and Related",
+    "citation": "[Page 7] Payroll and Related",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "budget_year": {
+    "value": 2021,
+    "citation": "[Page 1] 2021",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_rsf": {
+    "value": 339050,
+    "citation": "[Page 1] 339050",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_name": {
+    "value": "Lakeview Tower",
+    "citation": "[Page 1] Lakeview Tower",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "prior_year_budget": {
+    "value": 207445,
+    "citation": "[Page 7] 207445",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "prior_year_reforecast": {
+    "value": 208461,
+    "citation": "[Page 7] 208461",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "explanation_of_variance": {
+    "value": null,
+    "citation": "",
+    "confidence": 0.8
+   },
+   "budget_vs_reforecast_pct": {
+    "value": -2.27,
+    "citation": "[Page 7] -2.27",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "budget_vs_reforecast_variance": {
+    "value": -4724,
+    "citation": "[Page 7] -4724",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "reforecast_vs_prior_budget_pct": {
+    "value": -0.49,
+    "citation": "[Page 7] -0.49",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "reforecast_vs_prior_budget_variance": {
+    "value": -1016,
+    "citation": "[Page 7] -1016",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   }
+  },
+  {
+   "budget": {
+    "value": 379699,
+    "citation": "[Page 7] 379699",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "gl_code": {
+    "value": "7850-0000",
+    "citation": "[Page 7] 7850-0000",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "section": {
+    "value": "General & Administrative",
+    "citation": "[Page 7] General & Administrative",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "line_item": {
+    "value": "Management Fees",
+    "citation": "[Page 7] Management Fees",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "budget_year": {
+    "value": 2021,
+    "citation": "[Page 1] 2021",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_rsf": {
+    "value": 339050,
+    "citation": "[Page 1] 339050",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_name": {
+    "value": "Lakeview Tower",
+    "citation": "[Page 1] Lakeview Tower",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "prior_year_budget": {
+    "value": 399758,
+    "citation": "[Page 7] 399758",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "prior_year_reforecast": {
+    "value": 361587,
+    "citation": "[Page 7] 361587",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "explanation_of_variance": {
+    "value": null,
+    "citation": "",
+    "confidence": 0.8
+   },
+   "budget_vs_reforecast_pct": {
+    "value": -5.01,
+    "citation": "[Page 7] -5.01",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "budget_vs_reforecast_variance": {
+    "value": -18112,
+    "citation": "[Page 7] -18112",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "reforecast_vs_prior_budget_pct": {
+    "value": 9.55,
+    "citation": "[Page 7] 9.55",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "reforecast_vs_prior_budget_variance": {
+    "value": 38171,
+    "citation": "[Page 7] 38171",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   }
+  },
+  {
+   "budget": {
+    "value": 35775,
+    "citation": "[Page 7] 35775",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "gl_code": {
+    "value": "7855-0000",
+    "citation": "[Page 7] 7855-0000",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "section": {
+    "value": "General & Administrative",
+    "citation": "[Page 7] General & Administrative",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "line_item": {
+    "value": "Building Office Expenses",
+    "citation": "[Page 7] Building Office Expenses",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "budget_year": {
+    "value": 2021,
+    "citation": "[Page 1] 2021",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_rsf": {
+    "value": 339050,
+    "citation": "[Page 1] 339050",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_name": {
+    "value": "Lakeview Tower",
+    "citation": "[Page 1] Lakeview Tower",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "prior_year_budget": {
+    "value": 31820,
+    "citation": "[Page 7] 31820",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "prior_year_reforecast": {
+    "value": 40697,
+    "citation": "[Page 7] 40697",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "explanation_of_variance": {
+    "value": null,
+    "citation": "",
+    "confidence": 0.8
+   },
+   "budget_vs_reforecast_pct": {
+    "value": 12.09,
+    "citation": "[Page 7] 12.09",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "budget_vs_reforecast_variance": {
+    "value": 4922,
+    "citation": "[Page 7] 4922",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "reforecast_vs_prior_budget_pct": {
+    "value": -27.9,
+    "citation": "[Page 7] -27.9",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "reforecast_vs_prior_budget_variance": {
+    "value": -8877,
+    "citation": "[Page 7] -8877",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   }
+  },
+  {
+   "budget": {
+    "value": 29174,
+    "citation": "[Page 7] 29174",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "gl_code": {
+    "value": "7860-0000",
+    "citation": "[Page 7] 7860-0000",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "section": {
+    "value": "General & Administrative",
+    "citation": "[Page 7] General & Administrative",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "line_item": {
+    "value": "Office Equipment",
+    "citation": "[Page 7] Office Equipment",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "budget_year": {
+    "value": 2021,
+    "citation": "[Page 1] 2021",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_rsf": {
+    "value": 339050,
+    "citation": "[Page 1] 339050",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_name": {
+    "value": "Lakeview Tower",
+    "citation": "[Page 1] Lakeview Tower",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "prior_year_budget": {
+    "value": 25953,
+    "citation": "[Page 7] 25953",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "prior_year_reforecast": {
+    "value": 32216,
+    "citation": "[Page 7] 32216",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "explanation_of_variance": {
+    "value": null,
+    "citation": "",
+    "confidence": 0.8
+   },
+   "budget_vs_reforecast_pct": {
+    "value": 9.44,
+    "citation": "[Page 7] 9.44",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "budget_vs_reforecast_variance": {
+    "value": 3042,
+    "citation": "[Page 7] 3042",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "reforecast_vs_prior_budget_pct": {
+    "value": -24.13,
+    "citation": "[Page 7] -24.13",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "reforecast_vs_prior_budget_variance": {
+    "value": -6263,
+    "citation": "[Page 7] -6263",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   }
+  },
+  {
+   "budget": {
+    "value": 22200,
+    "citation": "[Page 7] 22200",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "gl_code": {
+    "value": "7864-0000",
+    "citation": "[Page 7] 7864-0000",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "section": {
+    "value": "General & Administrative",
+    "citation": "[Page 7] General & Administrative",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "line_item": {
+    "value": "Telephone",
+    "citation": "[Page 7] Telephone",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "budget_year": {
+    "value": 2021,
+    "citation": "[Page 1] 2021",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_rsf": {
+    "value": 339050,
+    "citation": "[Page 1] 339050",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_name": {
+    "value": "Lakeview Tower",
+    "citation": "[Page 1] Lakeview Tower",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "prior_year_budget": {
+    "value": 21600,
+    "citation": "[Page 7] 21600",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "prior_year_reforecast": {
+    "value": 21326,
+    "citation": "[Page 7] 21326",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "explanation_of_variance": {
+    "value": null,
+    "citation": "",
+    "confidence": 0.8
+   },
+   "budget_vs_reforecast_pct": {
+    "value": -4.1,
+    "citation": "[Page 7] -4.1",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "budget_vs_reforecast_variance": {
+    "value": -874,
+    "citation": "[Page 7] -874",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "reforecast_vs_prior_budget_pct": {
+    "value": 1.27,
+    "citation": "[Page 7] 1.27",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "reforecast_vs_prior_budget_variance": {
+    "value": 274,
+    "citation": "[Page 7] 274",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   }
+  },
+  {
+   "budget": {
+    "value": 85995,
+    "citation": "[Page 7] 85995",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "gl_code": {
+    "value": "7876-0000",
+    "citation": "[Page 7] 7876-0000",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "section": {
+    "value": "General & Administrative",
+    "citation": "[Page 7] General & Administrative",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "line_item": {
+    "value": "Insurance",
+    "citation": "[Page 7] Insurance",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "budget_year": {
+    "value": 2021,
+    "citation": "[Page 1] 2021",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_rsf": {
+    "value": 339050,
+    "citation": "[Page 1] 339050",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_name": {
+    "value": "Lakeview Tower",
+    "citation": "[Page 1] Lakeview Tower",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "prior_year_budget": {
+    "value": 67905,
+    "citation": "[Page 7] 67905",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "prior_year_reforecast": {
+    "value": 74975,
+    "citation": "[Page 7] 74975",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "explanation_of_variance": {
+    "value": "Consultant recommendation is to increase insurance expense by 25-30%",
+    "citation": "[Page 7] Consultant recommendation is to increase insurance expense by 25-30%",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "budget_vs_reforecast_pct": {
+    "value": -14.7,
+    "citation": "[Page 7] -14.7",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "budget_vs_reforecast_variance": {
+    "value": -11020,
+    "citation": "[Page 7] -11020",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "reforecast_vs_prior_budget_pct": {
+    "value": -10.41,
+    "citation": "[Page 7] -10.41",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "reforecast_vs_prior_budget_variance": {
+    "value": -7071,
+    "citation": "[Page 7] -7071",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   }
+  },
+  {
+   "budget": {
+    "value": 5200,
+    "citation": "[Page 7] 5200",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "gl_code": {
+    "value": "7879-0000",
+    "citation": "[Page 7] 7879-0000",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "section": {
+    "value": "General & Administrative",
+    "citation": "[Page 7] General & Administrative",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "line_item": {
+    "value": "Miscellaneous",
+    "citation": "[Page 7] Miscellaneous",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "budget_year": {
+    "value": 2021,
+    "citation": "[Page 1] 2021",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_rsf": {
+    "value": 339050,
+    "citation": "[Page 1] 339050",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_name": {
+    "value": "Lakeview Tower",
+    "citation": "[Page 1] Lakeview Tower",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "prior_year_budget": {
+    "value": 12000,
+    "citation": "[Page 7] 12000",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "prior_year_reforecast": {
+    "value": 3030,
+    "citation": "[Page 7] 3030",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "explanation_of_variance": {
+    "value": "No tenant events or sporting tickets purchased in 2020 due to the pandemic. The trend is expected to continue in 2021.",
+    "citation": "[Page 7] No tenant events or sporting tickets purchased in 2020 due to the pandemic. The trend is expected to continue in 2021.",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "budget_vs_reforecast_pct": {
+    "value": -71.62,
+    "citation": "[Page 7] -71.62",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "budget_vs_reforecast_variance": {
+    "value": -2170,
+    "citation": "[Page 7] -2170",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "reforecast_vs_prior_budget_pct": {
+    "value": 74.75,
+    "citation": "[Page 7] 74.75",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "reforecast_vs_prior_budget_variance": {
+    "value": 8970,
+    "citation": "[Page 7] 8970",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   }
+  },
+  {
+   "budget": {
+    "value": 4075177,
+    "citation": "[Page 7] 4075177",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "gl_code": {
+    "value": "8080-0000",
+    "citation": "[Page 7] 8080-0000",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "section": {
+    "value": "Real Estate Taxes",
+    "citation": "[Page 7] Real Estate Taxes",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "line_item": {
+    "value": "Real Estate Tax Expense",
+    "citation": "[Page 7] Real Estate Tax Expense",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "budget_year": {
+    "value": 2021,
+    "citation": "[Page 1] 2021",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_rsf": {
+    "value": 339050,
+    "citation": "[Page 1] 339050",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_name": {
+    "value": "Lakeview Tower",
+    "citation": "[Page 1] Lakeview Tower",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "prior_year_budget": {
+    "value": 4257447,
+    "citation": "[Page 7] 4257447",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "prior_year_reforecast": {
+    "value": 4046361,
+    "citation": "[Page 7] 4046361",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "explanation_of_variance": {
+    "value": null,
+    "citation": "",
+    "confidence": 0.8
+   },
+   "budget_vs_reforecast_pct": {
+    "value": -0.71,
+    "citation": "[Page 7] -0.71",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "budget_vs_reforecast_variance": {
+    "value": -28816,
+    "citation": "[Page 7] -28816",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "reforecast_vs_prior_budget_pct": {
+    "value": 4.96,
+    "citation": "[Page 7] 4.96",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "reforecast_vs_prior_budget_variance": {
+    "value": 211086,
+    "citation": "[Page 7] 211086",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   }
+  },
+  {
+   "budget": {
+    "value": 45662,
+    "citation": "[Page 7] 45662",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "gl_code": {
+    "value": "7866-0000",
+    "citation": "[Page 7] 7866-0000",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "section": {
+    "value": "Other Non-Operating Expenses",
+    "citation": "[Page 7] Other Non-Operating Expenses",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "line_item": {
+    "value": "Advertising & Promotion",
+    "citation": "[Page 7] Advertising & Promotion",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "budget_year": {
+    "value": 2021,
+    "citation": "[Page 1] 2021",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_rsf": {
+    "value": 339050,
+    "citation": "[Page 1] 339050",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_name": {
+    "value": "Lakeview Tower",
+    "citation": "[Page 1] Lakeview Tower",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "prior_year_budget": {
+    "value": 39700,
+    "citation": "[Page 7] 39700",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "prior_year_reforecast": {
+    "value": 29574,
+    "citation": "[Page 7] 29574",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "explanation_of_variance": {
+    "value": "Realty ads $6k, ListSite $900, Website expense $1200 are budgeted in 2021.",
+    "citation": "[Page 7] Realty ads $6k, ListSite $900, Website expense $1200 are budgeted in 2021.",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "budget_vs_reforecast_pct": {
+    "value": -54.4,
+    "citation": "[Page 7] -54.4",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "budget_vs_reforecast_variance": {
+    "value": -16088,
+    "citation": "[Page 7] -16088",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "reforecast_vs_prior_budget_pct": {
+    "value": 25.51,
+    "citation": "[Page 7] 25.51",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "reforecast_vs_prior_budget_variance": {
+    "value": 10126,
+    "citation": "[Page 7] 10126",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   }
+  },
+  {
+   "budget": {
+    "value": 40602,
+    "citation": "[Page 7] 40602",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "gl_code": {
+    "value": "7877-0000",
+    "citation": "[Page 7] 7877-0000",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "section": {
+    "value": "Other Non-Operating Expenses",
+    "citation": "[Page 7] Other Non-Operating Expenses",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "line_item": {
+    "value": "Legal & Accounting",
+    "citation": "[Page 7] Legal & Accounting",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "budget_year": {
+    "value": 2021,
+    "citation": "[Page 1] 2021",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_rsf": {
+    "value": 339050,
+    "citation": "[Page 1] 339050",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_name": {
+    "value": "Lakeview Tower",
+    "citation": "[Page 1] Lakeview Tower",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "prior_year_budget": {
+    "value": 18200,
+    "citation": "[Page 7] 18200",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "prior_year_reforecast": {
+    "value": 53807,
+    "citation": "[Page 7] 53807",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "explanation_of_variance": {
+    "value": "Zimmerman and Blue Canyon legal costs in 2020 were not budgeted.",
+    "citation": "[Page 7] Zimmerman and Blue Canyon legal costs in 2020 were not budgeted.",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "budget_vs_reforecast_pct": {
+    "value": 24.54,
+    "citation": "[Page 7] 24.54",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "budget_vs_reforecast_variance": {
+    "value": 13204,
+    "citation": "[Page 7] 13204",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "reforecast_vs_prior_budget_pct": {
+    "value": -195.64,
+    "citation": "[Page 7] -195.64",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "reforecast_vs_prior_budget_variance": {
+    "value": -35607,
+    "citation": "[Page 7] -35607",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   }
+  },
+  {
+   "budget": {
+    "value": 666001,
+    "citation": "[Page 7] 666001",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "gl_code": {
+    "value": "8085-0000",
+    "citation": "[Page 7] 8085-0000",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "section": {
+    "value": "Other Non-Operating Expenses",
+    "citation": "[Page 7] Other Non-Operating Expenses",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "line_item": {
+    "value": "Leasing Commissions",
+    "citation": "[Page 7] Leasing Commissions",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "budget_year": {
+    "value": 2021,
+    "citation": "[Page 1] 2021",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_rsf": {
+    "value": 339050,
+    "citation": "[Page 1] 339050",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_name": {
+    "value": "Lakeview Tower",
+    "citation": "[Page 1] Lakeview Tower",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "prior_year_budget": {
+    "value": 337794,
+    "citation": "[Page 7] 337794",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "prior_year_reforecast": {
+    "value": 79190,
+    "citation": "[Page 7] 79190",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "explanation_of_variance": {
+    "value": null,
+    "citation": "",
+    "confidence": 0.8
+   },
+   "budget_vs_reforecast_pct": {
+    "value": -741.01,
+    "citation": "[Page 7] -741.01",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "budget_vs_reforecast_variance": {
+    "value": -586811,
+    "citation": "[Page 7] -586811",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "reforecast_vs_prior_budget_pct": {
+    "value": 76.56,
+    "citation": "[Page 7] 76.56",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   },
+   "reforecast_vs_prior_budget_variance": {
+    "value": 258604,
+    "citation": "[Page 7] 258604",
+    "confidence": 0.8,
+    "page_numbers": [
+     7
+    ]
+   }
+  },
+  {
+   "budget": {
+    "value": 2072784,
+    "citation": "[Page 8] 2072784",
+    "confidence": 0.8,
+    "page_numbers": [
+     8
+    ]
+   },
+   "gl_code": {
+    "value": "8089-0000",
+    "citation": "[Page 8] 8089-0000",
+    "confidence": 0.8,
+    "page_numbers": [
+     8
+    ]
+   },
+   "section": {
+    "value": "Other Non-Operating Expenses",
+    "citation": "[Page 8] Other Non-Operating Expenses",
+    "confidence": 0.8,
+    "page_numbers": [
+     8
+    ]
+   },
+   "line_item": {
+    "value": "Tenant Improvements",
+    "citation": "[Page 8] Tenant Improvements",
+    "confidence": 0.8,
+    "page_numbers": [
+     8
+    ]
+   },
+   "budget_year": {
+    "value": 2021,
+    "citation": "[Page 1] 2021",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_rsf": {
+    "value": 339050,
+    "citation": "[Page 1] 339050",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_name": {
+    "value": "Lakeview Tower",
+    "citation": "[Page 1] Lakeview Tower",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "prior_year_budget": {
+    "value": 639210,
+    "citation": "[Page 8] 639210",
+    "confidence": 0.8,
+    "page_numbers": [
+     8
+    ]
+   },
+   "prior_year_reforecast": {
+    "value": 132497,
+    "citation": "[Page 8] 132497",
+    "confidence": 0.8,
+    "page_numbers": [
+     8
+    ]
+   },
+   "explanation_of_variance": {
+    "value": null,
+    "citation": "",
+    "confidence": 0.8
+   },
+   "budget_vs_reforecast_pct": {
+    "value": -1464.4,
+    "citation": "[Page 8] -1464.4",
+    "confidence": 0.8,
+    "page_numbers": [
+     8
+    ]
+   },
+   "budget_vs_reforecast_variance": {
+    "value": -1940287,
+    "citation": "[Page 8] -1940287",
+    "confidence": 0.8,
+    "page_numbers": [
+     8
+    ]
+   },
+   "reforecast_vs_prior_budget_pct": {
+    "value": 79.27,
+    "citation": "[Page 8] 79.27",
+    "confidence": 0.8,
+    "page_numbers": [
+     8
+    ]
+   },
+   "reforecast_vs_prior_budget_variance": {
+    "value": 506713,
+    "citation": "[Page 8] 506713",
+    "confidence": 0.8,
+    "page_numbers": [
+     8
+    ]
+   }
+  },
+  {
+   "budget": {
+    "value": 10200,
+    "citation": "[Page 8] 10200",
+    "confidence": 0.8,
+    "page_numbers": [
+     8
+    ]
+   },
+   "gl_code": {
+    "value": "8090-0000",
+    "citation": "[Page 8] 8090-0000",
+    "confidence": 0.8,
+    "page_numbers": [
+     8
+    ]
+   },
+   "section": {
+    "value": "Other Non-Operating Expenses",
+    "citation": "[Page 8] Other Non-Operating Expenses",
+    "confidence": 0.8,
+    "page_numbers": [
+     8
+    ]
+   },
+   "line_item": {
+    "value": "Space Planning",
+    "citation": "[Page 8] Space Planning",
+    "confidence": 0.8,
+    "page_numbers": [
+     8
+    ]
+   },
+   "budget_year": {
+    "value": 2021,
+    "citation": "[Page 1] 2021",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_rsf": {
+    "value": 339050,
+    "citation": "[Page 1] 339050",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_name": {
+    "value": "Lakeview Tower",
+    "citation": "[Page 1] Lakeview Tower",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "prior_year_budget": {
+    "value": 4500,
+    "citation": "[Page 8] 4500",
+    "confidence": 0.8,
+    "page_numbers": [
+     8
+    ]
+   },
+   "prior_year_reforecast": {
+    "value": 7618,
+    "citation": "[Page 8] 7618",
+    "confidence": 0.8,
+    "page_numbers": [
+     8
+    ]
+   },
+   "explanation_of_variance": {
+    "value": null,
+    "citation": "",
+    "confidence": 0.8
+   },
+   "budget_vs_reforecast_pct": {
+    "value": -33.89,
+    "citation": "[Page 8] -33.89",
+    "confidence": 0.8,
+    "page_numbers": [
+     8
+    ]
+   },
+   "budget_vs_reforecast_variance": {
+    "value": -2582,
+    "citation": "[Page 8] -2582",
+    "confidence": 0.8,
+    "page_numbers": [
+     8
+    ]
+   },
+   "reforecast_vs_prior_budget_pct": {
+    "value": -69.29,
+    "citation": "[Page 8] -69.29",
+    "confidence": 0.8,
+    "page_numbers": [
+     8
+    ]
+   },
+   "reforecast_vs_prior_budget_variance": {
+    "value": -3118,
+    "citation": "[Page 8] -3118",
+    "confidence": 0.8,
+    "page_numbers": [
+     8
+    ]
+   }
+  },
+  {
+   "budget": {
+    "value": 3751097,
+    "citation": "[Page 8] 3751097",
+    "confidence": 0.8,
+    "page_numbers": [
+     8
+    ]
+   },
+   "gl_code": {
+    "value": "9097-0000",
+    "citation": "[Page 8] 9097-0000",
+    "confidence": 0.8,
+    "page_numbers": [
+     8
+    ]
+   },
+   "section": {
+    "value": "Other Non-Operating Expenses",
+    "citation": "[Page 8] Other Non-Operating Expenses",
+    "confidence": 0.8,
+    "page_numbers": [
+     8
+    ]
+   },
+   "line_item": {
+    "value": "Capital Expenses",
+    "citation": "[Page 8] Capital Expenses",
+    "confidence": 0.8,
+    "page_numbers": [
+     8
+    ]
+   },
+   "budget_year": {
+    "value": 2021,
+    "citation": "[Page 1] 2021",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_rsf": {
+    "value": 339050,
+    "citation": "[Page 1] 339050",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_name": {
+    "value": "Lakeview Tower",
+    "citation": "[Page 1] Lakeview Tower",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "prior_year_budget": {
+    "value": 2628818,
+    "citation": "[Page 8] 2628818",
+    "confidence": 0.8,
+    "page_numbers": [
+     8
+    ]
+   },
+   "prior_year_reforecast": {
+    "value": 357692,
+    "citation": "[Page 8] 357692",
+    "confidence": 0.8,
+    "page_numbers": [
+     8
+    ]
+   },
+   "explanation_of_variance": {
+    "value": "Expenses for Phases 1, 2 and 5 plus lobby and lower level were moved to 2021 with the exception of $213,200 for architect and consultants fees.",
+    "citation": "[Page 8] Expenses for Phases 1, 2 and 5 plus lobby and lower level were moved to 2021 with the exception of $213,200 for architect and consultants fees.",
+    "confidence": 0.8,
+    "page_numbers": [
+     8
+    ]
+   },
+   "budget_vs_reforecast_pct": {
+    "value": -948.69,
+    "citation": "[Page 8] -948.69",
+    "confidence": 0.8,
+    "page_numbers": [
+     8
+    ]
+   },
+   "budget_vs_reforecast_variance": {
+    "value": -3393405,
+    "citation": "[Page 8] -3393405",
+    "confidence": 0.8,
+    "page_numbers": [
+     8
+    ]
+   },
+   "reforecast_vs_prior_budget_pct": {
+    "value": 86.39,
+    "citation": "[Page 8] 86.39",
+    "confidence": 0.8,
+    "page_numbers": [
+     8
+    ]
+   },
+   "reforecast_vs_prior_budget_variance": {
+    "value": 2271126,
+    "citation": "[Page 8] 2271126",
+    "confidence": 0.8,
+    "page_numbers": [
+     8
+    ]
+   }
+  },
+  {
+   "budget": {
+    "value": 2660640,
+    "citation": "[Page 8] 2660640",
+    "confidence": 0.8,
+    "page_numbers": [
+     8
+    ]
+   },
+   "gl_code": {
+    "value": "8103-0000",
+    "citation": "[Page 8] 8103-0000",
+    "confidence": 0.8,
+    "page_numbers": [
+     8
+    ]
+   },
+   "section": {
+    "value": "Depreciation/Amortization",
+    "citation": "[Page 8] Depreciation/Amortization",
+    "confidence": 0.8,
+    "page_numbers": [
+     8
+    ]
+   },
+   "line_item": {
+    "value": "Debt Service",
+    "citation": "[Page 8] Debt Service",
+    "confidence": 0.8,
+    "page_numbers": [
+     8
+    ]
+   },
+   "budget_year": {
+    "value": 2021,
+    "citation": "[Page 1] 2021",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_rsf": {
+    "value": 339050,
+    "citation": "[Page 1] 339050",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "property_name": {
+    "value": "Lakeview Tower",
+    "citation": "[Page 1] Lakeview Tower",
+    "confidence": 0.9,
+    "page_numbers": [
+     1
+    ]
+   },
+   "prior_year_budget": {
+    "value": 2660640,
+    "citation": "[Page 8] 2660640",
+    "confidence": 0.8,
+    "page_numbers": [
+     8
+    ]
+   },
+   "prior_year_reforecast": {
+    "value": 2660640,
+    "citation": "[Page 8] 2660640",
+    "confidence": 0.8,
+    "page_numbers": [
+     8
+    ]
+   },
+   "explanation_of_variance": {
+    "value": null,
+    "citation": "",
+    "confidence": 0.8
+   },
+   "budget_vs_reforecast_pct": {
+    "value": 0.0,
+    "citation": "[Page 8] 0",
+    "confidence": 0.8,
+    "page_numbers": [
+     8
+    ]
+   },
+   "budget_vs_reforecast_variance": {
+    "value": 0,
+    "citation": "[Page 8] 0",
+    "confidence": 0.8,
+    "page_numbers": [
+     8
+    ]
+   },
+   "reforecast_vs_prior_budget_pct": {
+    "value": 0.0,
+    "citation": "[Page 8] 0",
+    "confidence": 0.8,
+    "page_numbers": [
+     8
+    ]
+   },
+   "reforecast_vs_prior_budget_variance": {
+    "value": 0,
+    "citation": "[Page 8] 0",
+    "confidence": 0.8,
+    "page_numbers": [
+     8
+    ]
+   }
+  }
+ ],
+ "metadata": {
+  "models": {
+   "anthropic/claude-haiku-5.5": {
+    "calls": 9,
+    "cost_usd": 0.017317,
+    "tokens_in": 23529,
+    "tokens_out": 29928
+   }
+  },
+  "cost_usd": 0.017317,
+  "tokens_in": 23529,
+  "latency_ms": 31302,
+  "tokens_out": 29928,
+  "model_calls": 9
+ },
+ "schema": "budget_variance"
+}

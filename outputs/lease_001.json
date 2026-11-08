@@ -1,0 +1,353 @@
+{
+ "entries": [
+  {
+   "late_fee": {
+    "value": "greater of $75.00 or 6% of the unpaid rent",
+    "citation": "[Page 3] the greater of: (a) $75.00, or (b) a sum equal to 6% of the unpaid rent or other payment",
+    "confidence": 0.9,
+    "page_numbers": [
+     3
+    ]
+   },
+   "premises": {
+    "value": "Suite 214W",
+    "citation": "[Page 2] Second Floor, West Section, Suite 214W",
+    "confidence": 0.9,
+    "page_numbers": [
+     2
+    ]
+   },
+   "tenant_name": {
+    "value": "M.J. Delacroix & Associates, P.C.",
+    "citation": "[Page 2] TENANT: M.J. Delacroix & Associates, P.C., an Illinois corporation",
+    "confidence": 0.95,
+    "page_numbers": [
+     2
+    ]
+   },
+   "broker_names": {
+    "value": [
+     "Meridian Commercial Realty Group, Inc."
+    ],
+    "citation": "[Page 2] REAL ESTATE BROKER DUE COMMISSION: Meridian Commercial Realty Group, Inc.",
+    "confidence": 0.85,
+    "page_numbers": [
+     2
+    ]
+   },
+   "holdover_rent": {
+    "value": "150% of the Annual Rent for the last period prior to the date of such termination, plus Rent Adjustments",
+    "citation": "[Page 8] 150% of the amount of the Annual Rent for the last period prior to the date of such termination",
+    "confidence": 0.85,
+    "page_numbers": [
+     8
+    ]
+   },
+   "permitted_use": {
+    "value": "General Office: Architecture",
+    "citation": "[Page 2] USE: | General Office: Architecture",
+    "confidence": 0.9,
+    "page_numbers": [
+     2
+    ]
+   },
+   "property_name": {
+    "value": "Hollis Office Plaza",
+    "citation": "[Page 2] BUILDING: | Hollis Office Plaza, 1850 Hollis Road, Fairmont Hills, Illinois 60517",
+    "confidence": 0.9,
+    "page_numbers": [
+     2
+    ]
+   },
+   "guarantor_name": {
+    "value": "Martin J. Delacroix",
+    "citation": "[Page 25] Guarantor: [handwritten: MARTIN J. DELACROIX]",
+    "confidence": 0.85,
+    "page_numbers": [
+     25
+    ]
+   },
+   "parking_spaces": {
+    "value": null,
+    "citation": "",
+    "confidence": 0.8
+   },
+   "pro_rata_share": {
+    "value": 0.91,
+    "citation": "[Page 2] TENANT'S PROPORTIONATE SHARE: | 0.91 %",
+    "confidence": 0.95,
+    "page_numbers": [
+     2
+    ]
+   },
+   "base_year_taxes": {
+    "value": 1993,
+    "citation": "[Page 20] BASE YEAR (TAXES): | 19 93",
+    "confidence": 0.9,
+    "page_numbers": [
+     20
+    ]
+   },
+   "right_to_sublet": {
+    "value": "only with prior written consent of Landlord",
+    "citation": "[Page 6] without the prior written consent of Landlord",
+    "confidence": 0.8,
+    "page_numbers": [
+     6
+    ]
+   },
+   "total_base_rent": {
+    "value": 123084,
+    "citation": "[Page 18] 60 | $ 123,084",
+    "confidence": 0.97,
+    "page_numbers": [
+     18
+    ]
+   },
+   "building_address": {
+    "value": "1850 Hollis Road, Fairmont Hills, Illinois 60517",
+    "citation": "[Page 2] BUILDING: | Hollis Office Plaza, 1850 Hollis Road, Fairmont Hills, Illinois 60517",
+    "confidence": 0.9,
+    "page_numbers": [
+     2
+    ]
+   },
+   "free_rent_months": {
+    "value": 0,
+    "citation": "[Page 2] 05/01/93 - 04/30/94 | $ 23,184 | $ 1,932",
+    "confidence": 0.75,
+    "page_numbers": [
+     2
+    ]
+   },
+   "expense_structure": {
+    "value": "base year 1993",
+    "citation": "[Page 2] BASE YEAR (DIRECT EXPENSES): | 19 93",
+    "confidence": 0.85,
+    "page_numbers": [
+     2
+    ]
+   },
+   "lease_term_months": {
+    "value": 60,
+    "citation": "[Page 2] Five years and no months beginning on the Commencement Date and ending on the Termination Date",
+    "confidence": 0.97,
+    "page_numbers": [
+     2
+    ]
+   },
+   "base_year_expenses": {
+    "value": 1993,
+    "citation": "[Page 20] BASE YEAR (DIRECT EXPENSES): | 19 93",
+    "confidence": 0.9,
+    "page_numbers": [
+     20
+    ]
+   },
+   "ti_allowance_total": {
+    "value": null,
+    "citation": "",
+    "confidence": 0.8
+   },
+   "landlord_legal_name": {
+    "value": "TRENT MA-II HOLLIS OFFICE PLAZA, INC.",
+    "citation": "[Page 2] LANDLORD: | TRENT MA-II HOLLIS OFFICE PLAZA, INC., a Delaware corporation",
+    "confidence": 0.95,
+    "page_numbers": [
+     2
+    ]
+   },
+   "renewal_term_months": {
+    "value": [],
+    "citation": "",
+    "confidence": 0.8
+   },
+   "base_rent_escalation": {
+    "value": "fixed steps per schedule",
+    "citation": "[Page 18] 43. BASE RENT SCHEDULE.",
+    "confidence": 0.85,
+    "page_numbers": [
+     18
+    ]
+   },
+   "lease_execution_date": {
+    "value": "1993-03-05",
+    "citation": "[Page 2] LEASE REFERENCE DATE: | March 5, 19 93",
+    "confidence": 0.85,
+    "page_numbers": [
+     2
+    ]
+   },
+   "electricity_provision": {
+    "value": "furnished as a building service for lighting and direct uses; excess usage metered and paid as additional rent",
+    "citation": "[Page 7] (f) electricity for lighting, convenience outlets and other direct uses",
+    "confidence": 0.7,
+    "page_numbers": [
+     7
+    ]
+   },
+   "lease_expiration_date": {
+    "value": "1998-04-30",
+    "citation": "[Page 2] TERMINATION DATE: | April 30, 19 98",
+    "confidence": 0.95,
+    "page_numbers": [
+     2
+    ]
+   },
+   "renewal_notice_months": {
+    "value": [],
+    "citation": "",
+    "confidence": 0.8
+   },
+   "renewal_option_exists": {
+    "value": false,
+    "citation": "[Page 1] ",
+    "confidence": 0.8,
+    "page_numbers": [
+     1
+    ]
+   },
+   "renewal_options_count": {
+    "value": 0,
+    "citation": "[Page 2] ",
+    "confidence": 0.8,
+    "page_numbers": [
+     2
+    ]
+   },
+   "parking_monthly_charge": {
+    "value": null,
+    "citation": "",
+    "confidence": 0.85
+   },
+   "rent_commencement_date": {
+    "value": "1993-05-01",
+    "citation": "[Page 2] COMMENCEMENT DATE: | May 1, 19 93",
+    "confidence": 0.8,
+    "page_numbers": [
+     2
+    ]
+   },
+   "early_termination_right": {
+    "value": false,
+    "citation": "[Page 1] ",
+    "confidence": 0.7,
+    "page_numbers": [
+     1
+    ]
+   },
+   "lease_commencement_date": {
+    "value": "1993-05-01",
+    "citation": "[Page 2] COMMENCEMENT DATE: | May 1, 19 93",
+    "confidence": 0.95,
+    "page_numbers": [
+     2
+    ]
+   },
+   "rent_schedule_end_dates": {
+    "value": [
+     "1994-04-30",
+     "1995-04-30",
+     "1996-04-30",
+     "1997-04-30",
+     "1998-04-30"
+    ],
+    "citation": "[Page 18] 05/01/93 - 04/30/94 ... 05/01/97 - 04/30/98",
+    "confidence": 0.9,
+    "page_numbers": [
+     18
+    ]
+   },
+   "rentable_square_footage": {
+    "value": 1892,
+    "citation": "[Page 2] PREMISES RENTABLE AREA: | approximately 1,892 square feet",
+    "confidence": 0.95,
+    "page_numbers": [
+     2
+    ]
+   },
+   "security_deposit_amount": {
+    "value": 2150,
+    "citation": "[Page 2] SECURITY DEPOSIT: | $ [struck: 2,400] [handwritten: 2150.00 Delacroix]",
+    "confidence": 0.8,
+    "page_numbers": [
+     2
+    ]
+   },
+   "letter_of_credit_required": {
+    "value": false,
+    "citation": "[Page 1] ",
+    "confidence": 0.75,
+    "page_numbers": [
+     1
+    ]
+   },
+   "rent_schedule_start_dates": {
+    "value": [
+     "1993-05-01",
+     "1994-05-01",
+     "1995-05-01",
+     "1996-05-01",
+     "1997-05-01"
+    ],
+    "citation": "[Page 18] 05/01/93 - 04/30/94 | $ 23,184 | $ 1,932 | 12 | $ 23,184",
+    "confidence": 0.9,
+    "page_numbers": [
+     18
+    ]
+   },
+   "rent_schedule_monthly_rent": {
+    "value": [
+     1932,
+     1990,
+     2050,
+     2111,
+     2174
+    ],
+    "citation": "[Page 18] Monthly Installment | $ 1,932 | $ 1,990 | $ 2,050 | $ 2,111 | $ 2,174",
+    "confidence": 0.95,
+    "page_numbers": [
+     18
+    ]
+   },
+   "termination_fee_description": {
+    "value": null,
+    "citation": "",
+    "confidence": 0.8
+   },
+   "rent_schedule_annual_rent_per_rsf": {
+    "value": [
+     "12.25",
+     "12.62",
+     "13.00",
+     "13.39",
+     "13.79"
+    ],
+    "citation": "[Page 18] approximately 1,892 square feet; 05/01/93 - 04/30/94 | $ 23,184 | $ 1,932 | 12",
+    "confidence": 0.85
+   }
+  }
+ ],
+ "metadata": {
+  "models": {
+   "anthropic/claude-haiku-5.5": {
+    "calls": 27,
+    "cost_usd": 0.029809,
+    "tokens_in": 105162,
+    "tokens_out": 39677
+   },
+   "anthropic/claude-sonnet-5.5": {
+    "calls": 1,
+    "cost_usd": 0.0674,
+    "tokens_in": 32195,
+    "tokens_out": 301
+   }
+  },
+  "cost_usd": 0.097209,
+  "tokens_in": 137357,
+  "latency_ms": 59282,
+  "tokens_out": 39978,
+  "model_calls": 28
+ },
+ "schema": "lease_abstraction"
+}

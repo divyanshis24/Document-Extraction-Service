@@ -9,7 +9,6 @@ import asyncio
 from dataclasses import dataclass, field
 from typing import Awaitable, Callable, Protocol
 
-from app.errors import ExtractionError  # noqa: F401 - re-exported for extractors
 from app.jobs import ClaimedJob
 
 Progress = Callable[[str], Awaitable[None]]

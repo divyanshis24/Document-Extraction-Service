@@ -1,0 +1,238 @@
+{
+ "entries": [
+  {
+   "late_fee": {
+    "value": "$150.00 late charge plus interest at 4% per annum above FIRST MERIDIAN corporate base rate",
+    "citation": "[Section 12] subject to a One Hundred Fifty and 00/100 Dollars ($150.00) late charge and shall bear interest until paid at the annual rate of four (4%) percent in excess of the Corporate base rate",
+    "confidence": 0.9
+   },
+   "premises": {
+    "value": "Suite 310",
+    "citation": "[Section 1] known as Suite 310 in the building",
+    "confidence": 0.97
+   },
+   "tenant_name": {
+    "value": "KESTREL ANALYTICS USA LLC",
+    "citation": "[Section 1] KESTREL ANALYTICS USA LLC, a Delaware limited liability company (\"Tenant\")",
+    "confidence": 0.97
+   },
+   "broker_names": {
+    "value": [
+     "PINNACLE REALTY"
+    ],
+    "citation": "[Section 14] The Tenant has dealt with (and only with) PINNACLE REALTY, as broker",
+    "confidence": 0.9
+   },
+   "holdover_rent": {
+    "value": "double the Base Rent (200% of monthly Base Rent)",
+    "citation": "[Section 9] Tenant shall pay to Landlord double the Base Rent set forth in Paragraph 1 hereof",
+    "confidence": 0.9
+   },
+   "permitted_use": {
+    "value": "general office purposes and no other purpose",
+    "citation": "[Section 1] Tenant shall use and occupy the Premises for general office purposes and no other purpose.",
+    "confidence": 0.95
+   },
+   "property_name": {
+    "value": "ONE HARLOW PLACE",
+    "citation": "[Section 1] commonly known as ONE HARLOW PLACE, 850 N. HARLOW AVENUE",
+    "confidence": 0.88
+   },
+   "guarantor_name": {
+    "value": null,
+    "citation": "",
+    "confidence": 0.9
+   },
+   "parking_spaces": {
+    "value": null,
+    "citation": "",
+    "confidence": 0.85
+   },
+   "pro_rata_share": {
+    "value": null,
+    "citation": "",
+    "confidence": 0.85
+   },
+   "base_year_taxes": {
+    "value": null,
+    "citation": "",
+    "confidence": 0.9
+   },
+   "right_to_sublet": {
+    "value": "with landlord's prior written consent, not unreasonably withheld if assignee meets financial and reputation criteria; landlord may cancel",
+    "citation": "[Section 8] Landlord agrees not to unreasonably withhold its consent to any proposed assignment or subletting",
+    "confidence": 0.8
+   },
+   "total_base_rent": {
+    "value": 54055,
+    "citation": "[Section 1] October 1, 2025 through April 30, 2027 $2,845.00",
+    "confidence": 0.5
+   },
+   "building_address": {
+    "value": "850 N. HARLOW AVENUE, Naperville, Illinois 60540",
+    "citation": "[Section 1] commonly known as ONE HARLOW PLACE, 850 N. HARLOW AVENUE, Naperville, Illinois 60540",
+    "confidence": 0.9
+   },
+   "free_rent_months": {
+    "value": 3,
+    "citation": "[Section 1] monthly Base Rent shall abate in an amount equal to the first three (3) full calendar months of Base Rent",
+    "confidence": 0.93
+   },
+   "expense_structure": {
+    "value": null,
+    "citation": "",
+    "confidence": 0.3
+   },
+   "lease_term_months": {
+    "value": 19,
+    "citation": "[Section 1] for the term of one (1) year and seven (7) months, commencing on the 1st day of October, 2025 and terminating on the 30th day of April, 2027",
+    "confidence": 0.95
+   },
+   "base_year_expenses": {
+    "value": null,
+    "citation": "",
+    "confidence": 0.9
+   },
+   "ti_allowance_total": {
+    "value": null,
+    "citation": "",
+    "confidence": 0.85
+   },
+   "landlord_legal_name": {
+    "value": "850 N. HARLOW AVENUE LLC",
+    "citation": "[Section 1] 850 N. HARLOW AVENUE LLC, an Illinois limited liability company (\"Landlord\")",
+    "confidence": 0.97
+   },
+   "renewal_term_months": {
+    "value": [],
+    "citation": "",
+    "confidence": 0.85
+   },
+   "base_rent_escalation": {
+    "value": null,
+    "citation": "",
+    "confidence": 0.85
+   },
+   "lease_execution_date": {
+    "value": "2025-08-21",
+    "citation": "[Section 1] THIS LEASE is made as of the 21st day of August, 2025",
+    "confidence": 0.95
+   },
+   "electricity_provision": {
+    "value": "separately metered and billed directly to Tenant by Commonwealth Edison",
+    "citation": "[Section 2] shall be separately metered and billed directly to, and be the sole responsibility of, Tenant by Commonwealth Edison",
+    "confidence": 0.9
+   },
+   "lease_expiration_date": {
+    "value": "2027-04-30",
+    "citation": "[Section 1] terminating on the 30th day of April, 2027",
+    "confidence": 0.97
+   },
+   "renewal_notice_months": {
+    "value": [],
+    "citation": "",
+    "confidence": 0.85
+   },
+   "renewal_option_exists": {
+    "value": false,
+    "citation": "[Section 1] ",
+    "confidence": 0.85
+   },
+   "renewal_options_count": {
+    "value": 0,
+    "citation": "[Section 2] ",
+    "confidence": 0.85
+   },
+   "parking_monthly_charge": {
+    "value": null,
+    "citation": "",
+    "confidence": 0.9
+   },
+   "rent_commencement_date": {
+    "value": "2026-01-01",
+    "citation": "[Section 1] beginning as of the commencement of the Term, monthly Base Rent shall abate in an amount equal to the first three (3) full calendar months of Base Rent",
+    "confidence": 0.75
+   },
+   "early_termination_right": {
+    "value": false,
+    "citation": "[Section 1] ",
+    "confidence": 0.8
+   },
+   "lease_commencement_date": {
+    "value": "2025-10-01",
+    "citation": "[Section 1] commencing on the 1st day of October, 2025",
+    "confidence": 0.97
+   },
+   "rent_schedule_end_dates": {
+    "value": [
+     "2027-04-30"
+    ],
+    "citation": "[Section 1] October 1, 2025 through April 30, 2027 $2,845.00",
+    "confidence": 0.85
+   },
+   "rentable_square_footage": {
+    "value": 1842,
+    "citation": "[Section 1] comprised of approximately 1,842 rentable square feet",
+    "confidence": 0.97
+   },
+   "security_deposit_amount": {
+    "value": 2850,
+    "citation": "[Section 13] the sum of Two Thousand Eight Hundred Fifty and 00/100 Dollars ($2,850.00)",
+    "confidence": 0.95
+   },
+   "letter_of_credit_required": {
+    "value": false,
+    "citation": "[Section 1] ",
+    "confidence": 0.8
+   },
+   "rent_schedule_start_dates": {
+    "value": [
+     "2025-10-01"
+    ],
+    "citation": "[Section 1] October 1, 2025 through April 30, 2027 $2,845.00",
+    "confidence": 0.9
+   },
+   "rent_schedule_monthly_rent": {
+    "value": [
+     2845
+    ],
+    "citation": "[Section 1] October 1, 2025 through April 30, 2027 $2,845.00",
+    "confidence": 0.95
+   },
+   "termination_fee_description": {
+    "value": null,
+    "citation": "",
+    "confidence": 0.8
+   },
+   "rent_schedule_annual_rent_per_rsf": {
+    "value": [
+     "18.53"
+    ],
+    "citation": "[Section 1] approximately 1,842 rentable square feet; October 1, 2025 through April 30, 2027 $2,845.00",
+    "confidence": 0.85
+   }
+  }
+ ],
+ "metadata": {
+  "models": {
+   "anthropic/claude-haiku-5.5": {
+    "calls": 2,
+    "cost_usd": 0.006249,
+    "tokens_in": 29489,
+    "tokens_out": 6600
+   },
+   "anthropic/claude-sonnet-5.5": {
+    "calls": 1,
+    "cost_usd": 0.061328,
+    "tokens_in": 24874,
+    "tokens_out": 1158
+   }
+  },
+  "cost_usd": 0.067577,
+  "tokens_in": 54363,
+  "latency_ms": 34816,
+  "tokens_out": 7758,
+  "model_calls": 3
+ },
+ "schema": "lease_abstraction"
+}

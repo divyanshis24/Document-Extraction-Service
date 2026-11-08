@@ -5,7 +5,6 @@ import codecs
 import hashlib
 import io
 import json
-import re
 import zipfile
 from pathlib import PurePosixPath
 from urllib.parse import urlsplit

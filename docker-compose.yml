@@ -50,6 +50,8 @@ services:
       retries: 6
       start_period: 10s
     stop_grace_period: 25s
+    # Bounded, so a runaway request can't take the host down with it.
+    mem_limit: 1g
     restart: unless-stopped
 
   worker:
@@ -78,6 +80,9 @@ services:
       replicas: 2
     # Long enough to release in-flight jobs to the queue on shutdown.
     stop_grace_period: 15s
+    # A worker that outgrows this is killed and restarted; its jobs' leases expire and other
+    # workers pick them up. Page images are rendered a few at a time to stay well inside it.
+    mem_limit: 2g
     restart: unless-stopped
 
 volumes:

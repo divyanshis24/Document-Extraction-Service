@@ -295,12 +295,17 @@ def test_plan_prompt_does_not_send_the_whole_sheet():
     assert len(g.calls[0]["prompt"]) < 8000
 
 
+# A plan that reads rent from an empty column, so the sample check has a real objection.
+EMPTY_RENT_PLAN = {**GOOD_PLAN, "fields": {**GOOD_PLAN["fields"], "rent": {"rule": "column", "column": "C"}}}
+RENT_OBJECTION = [{"key": "rent", "row_id": "U-0", "expected": 1000}]
+
+
 def fill_with(rent_for):
     def answer(model, prompt, _):
         if "Fill in these fields" in prompt:
             ids = [l.split("Row id ")[1].rstrip(":") for l in prompt.splitlines() if l.startswith("Row id ")]
             return {json.loads(i): {"rent": rent_for(json.loads(i))} for i in ids}
-        return plan_answer(wrong=["rent"])(model, prompt, _)
+        return plan_answer(EMPTY_RENT_PLAN, wrong=RENT_OBJECTION)(model, prompt, _)
     return answer
 
 
@@ -314,6 +319,17 @@ def test_field_rejected_by_the_sample_check_is_read_by_the_model():
 def test_model_filled_value_not_in_the_row_is_dropped():
     result, *_ = run_extract(Gateway(fill_with(lambda unit: 42)), table_xlsx(5), "xlsx", TABLE_FIELDS)
     assert {e["rent"]["value"] for e in result["entries"]} == {None}
+
+
+@pytest.mark.parametrize("objection", [
+    ["rent"],  # no concrete alternative named
+    [{"key": "rent", "row_id": "U-0", "expected": 5555}],  # an alternative the row doesn't show
+])
+def test_sample_check_cannot_reject_a_value_the_row_really_shows(objection):
+    g = Gateway(plan_answer(wrong=objection))
+    result, *_ = run_extract(g, table_xlsx(5), "xlsx", TABLE_FIELDS)
+    assert [e["rent"]["value"] for e in result["entries"]] == [1000 + i for i in range(5)]
+    assert not any("Fill in these fields" in c["prompt"] for c in g.calls)  # no paid re-read
 
 
 def test_primary_cannot_be_rejected_by_the_sample_check():
