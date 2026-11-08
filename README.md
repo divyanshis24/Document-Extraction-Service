@@ -48,7 +48,7 @@ make check      # all of the above except eval
 (all eight submitted at once, as the harness does).
 
 ```
-$ python tools/validate.py outputs/ --schema-dir sample/schemas --truth-dir sample/sample-data-output-validated
+$ python3 tools/validate.py outputs/ --schema-dir sample/schemas --truth-dir sample/sample-data-output-validated
 SCORE    boxscore_001.json: 1.000   rows 10/10     hallucinations=0 misses=0
 SCORE    budget_001.json:   0.999   rows 55/55     hallucinations=0 misses=0
 SCORE    lease_001.json:    0.900   rows 1/1       hallucinations=0 misses=0
